@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+           $('form fieldset div input').click(function(){
+            $('form fieldset div input').removeClass('active');
+                $(this).addClass('active');
+                // alert(
+                //     $(this).attr('data-tab')
+                // )
+                $('ol li').removeClass('active');
+                $('#' + $(this).attr('data-tab')).addClass('active')
+           })
+       })
+    </script>
+</head>
+<style>
+    input:hover{
+        border: 1px solid skyblue; color: skyblue;
+    }
+    input{
+        background: none; width: 112px; height: 48px; border-radius: 30px;
+        color: #d1d1d1; border: 1px solid #d1d1d1; cursor: pointer;
+    }
+    input.active{
+        border-color: skyblue; color: skyblue;
+    }
+    select{
+        width: 300px; height: 48px;
+    }
+</style>
+<body>
+    <form action="">
+        <fieldset>
+            <div>
+                <label>Gender</label>
+                <input class="active" type="button" name="test" id="" value="test1">
+                <input class="" type="button" name="test" id="" value="test2">
+                <input class="" type="button" name="test" id="" value="test3">
+
+                <label>age</label>
+                <input class="active" type="button" name="test" id="" value="test1">
+                <input class="" type="button" name="test" id="" value="test2">
+                <input class="" type="button" name="test" id="" value="test3">
+            </div>
+        </fieldset>
+    </form>
+
+     <select name="" id="">
+         <option value="">aaaaaa</option>
+         <option value="">ssssssss</option>
+         <option value="">ddddddddd</option>
+     </select>
+</body>
+</html>
