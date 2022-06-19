@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Little Farm 로그인</title>
+    <title>마이페이지</title>
     <link rel="stylesheet" href="css/import.css">
-</head> 
+    <script src="js/test.js" defer></script>
+</head>
 <body>
-    <header class="NoneColor-Header">
-        <h1><img src="images/main_Logo.png" alt="">My Little Farm</h1>
+    <header class="ColorH">
+        <h1><img src="images/COlor_Logo.png" alt="">My Little Farm</h1>
         <nav>
             <ul>
                 <li>운영정보
@@ -47,31 +48,57 @@
         <span><a href="login.html">로그인</a></span>
     </header>
 
-    <section class="loginSection">
-        <form>
-            <fieldset>
-                <p>로그인</p>
-                <h2>MY LITTLE FARM</h2>
-
-                <input type="text" name="ID">
-                <input type="password" name="PW">
-                
-                <input type="checkbox" id="btn_check1">
-                <label for="btn_check1">SAVE ID</label>
-
-                <input type="submit" value="로그인">
-
-                <ul>
-                    <li>google</li>
-                    <li>네이버</li>
-                    <li>카카오</li>
-                </ul>
-
-                <a href="">회원가입</a><a href="">아이디찾기</a><a href="">비밀번호찾기</a>
-            </fieldset>
-        </div>
+    <section>
+        <div class="main">
+            <div class="content-wrap">
+              <div class="content-left">
+                <div class="main-wrap">
+                  <div id="main-day" class="main-day"></div>
+                  <div id="main-date" class="main-date"></div>
+                </div>
+                <div class="todo-wrap">
+                  <div class="todo-title">Todo List</div>
+                  <div class="input-wrap">
+                    <input type="text" placeholder="please write here!!" id="input-box" class="input-box">
+                    <button type="button" id="input-data" class="input-data">INPUT</button>
+                    <div id="input-list" class="input-list"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-right">
+                <table id="calendar" align="center">
+                  <thead>
+                    <tr class="btn-wrap clearfix">
+                      <td class="Lnext"> 
+                        <label id="prev">
+                            &#60;
+                        </label>
+                      </td>
+                      <td align="center" id="current-year-month" colspan="5"></td>
+                      <td class="Rnext">
+                        <label id="next">
+                            &#62;
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td class = "sun" align="center">Sun</td>
+                        <td align="center">Mon</td>
+                        <td align="center">Tue</td>
+                        <td align="center">Wed</td>
+                        <td align="center">Thu</td>
+                        <td align="center">Fri</td>
+                        <td class= "sat" align="center">Sat</td>
+                      </tr>
+                  </thead>
+                  <tbody id="calendar-body" class="calendar-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
     </section>
-    
+
+
     <footer>
         <h1><a href="index.html">My Little Farm</a></h1>
         <div>
