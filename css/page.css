@@ -30,69 +30,69 @@
 
 
 
-    .main{
+    .calendar .main{
         display: flex; align-items: center; justify-content: center; height: 100vh;
     }
-    .content-wrap{
+    .calendar .content-wrap{
         width: 800px; height: 600px; margin:0 auto;
         overflow: hidden; 
     }
-    .content-left{
+    .calendar .content-left{
         background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
         height: 490px; padding: 90px 20px 20px 0;  overflow: auto; 
     }
-    .Lnext, .Rnext,
+    .calendar .Lnext, .calendar .Rnext,
     #next, #prev{
         cursor: pointer; color: #FFEBD3;
     }
-    .main-wrap{
+    .calendar .main-wrap{
         text-align: center; margin: 20px 0 0 0;
     }
-    .main-day{
-        font-size: 30px; font-weight: bold;
+    .calendar .main-day{
+        font-size: 30px;
     }
-    .main-date{
-        font-size: 120px; font-weight: bold; margin: 20px 0;
+    .calendar .main-date{
+        font-size: 120px; margin: 20px 0; font-family: 'Noto Sans KR'; font-weight: bold;
     }
-    .todo-wrap{
+    .calendar .todo-wrap{
         padding: 0 0 0 40px;
     }
-    .todo-title{
-        font-size: 20px; font-weight: 100; margin: 0 0 10px 0;
+    .calendar .todo-title{
+        font-size: 20px; margin: 0 0 10px 0;
     }
-    .input-box{
+    .calendar .input-box{
         width: 70%; height: auto; background: #0b0809; color: #FFEBD3; line-height : normal;
         padding: .8em .5em 0 0; font-family: inherit; border: 0; border-bottom: 1px dashed #627200;; 
         border-radius: 0; outline-style: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;
     }
-    .input-data{
-        cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0;
+    .calendar .input-data{
+        cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0; font-family: 'Tiro Devanagari Sanskrit Regular';
         background: #627200; border: none; color: #FFEBD3; border-radius: 10px;
     }
-    .input-data:hover{
+    .calendar .input-data:hover{
         background: #ffffff; color: #0b0809;
     }
-    .input-list > div{
-        font-size: 10px; width: 60%; float: left; color: #FFEBD3;
+    .calendar .input-list > div{
+        font-size: 16px; width: 60%; float: left; color: #FFEBD3;
     }
-    .del-data{
+    .calendar .del-data{
         display: block; color: #FFEBD3; float: left; width: 10%; cursor: pointer;
         font-size: 10px; padding: 10px; background: #0b0809; border: none; border-radius: 10px;
     }
-    .content-right{
+    .calendar .content-right{
         float: left; width: 360px; height: 480px; padding: 100px 20px 20px 20px; background: #627200; border-radius: 0 20px 20px 0;
     }
-    .sun{
+    .calendar .sun{
         color:#ef3333;
     }
-    .sat{
+    .calendar .sat{
         color:#2107e0;
     }
-    .content-right table tr td{
-        width: 50px; height: 50px; text-align: center; font-size: 20px; font-weight: bold;
+    .calendar .content-right table tr td{
+        width: 50px; height: 50px; text-align: center; font-size: 20px; vertical-align: middle;
     }
-    .calendar-body tr td{
-        cursor: pointer; vertical-align: middle;
+    .calendar .calendar-body tr td{
+        cursor: pointer; font-family: 'Noto Sans KR'; font-weight: bold;
     } 
     .active{
         background: #0b0809; border-radius: 50%; color: #ffffff;
