@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <link rel="stylesheet" href="css/import.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/weather.js"></script>
 </head>
 <body>
     <header class="NoneColor-Header">
-        <h1><img src="images/main_Logo.png" alt="">My Little Farm</h1>
+        <h1><img src="images/main_Logo.png" alt=""></h1>
         <nav>
             <ul>
                 <li>운영정보
@@ -47,53 +49,56 @@
         <span><a href="login.html">로그인</a></span>
     </header>
     
-    <section>
+    <section class="fix">
         <div class="mainbackground">
             <video autoplay muted loop>
                 <source src="mp4/gp.mp4" type="video/mp4">
             </video>
             <div class="MainV">
                 <div>
-                    <h2>MY
-                        LITTLE
+                    <h2>MY <br>
+                        LITTLE<br>
                         FARM
                     </h2>
-                    <button>작물 질병정보 보기 </button>
+                    <a href="Notification_information.html">작물 질병정보 보기</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="WeatherSection">
-        <h2>WETHER</h2>
-        <div>
-            <title>서울</title>
-            <img src="" alt=""><p>21°C</p>
-            <ul>
-                <li>체감온도</li>
-                <li>안개, 가벼운 공기</li>
-                <li>1.0m/s북동</li>
-                <li>습도 : 64%</li>
-                <li>이슬점 : 14°C</li>
-                <li>자외선 : 4</li>
-            </ul>
+
+    <section class="WeatherSection fix">
+        <h2>WEATHER</h2>
+        <div id="showWeatherForcast">
         </div>
-        <div>map</div>
-        <img src="" alt="">
+            <img src="images/main_weather_1.png" alt="">
+            <img src="images/main_weather_2.png" alt="">
     </section>
+
     <section class="hob">
-        <h2>신선한 취미</h2>
-        <p>배우자, 아이들과 함께 시간을 보낼 수 있는 건강한 시간을 가져 보세요!<br/>
-            도시에만 살아서 자연을 모르는 아이들에게 자연학습과 테마여행의 장을 열어주세요!</p>
+        <div>
+            <h2>신선한 취미</h2>
+            <p>배우자, 아이들과 함께 시간을 보낼 수 있는 건강한 시간을 가져 보세요!<br/>
+                도시에만 살아서 자연을 모르는 아이들에게 자연학습과 테마여행의 장을 열어주세요!</p>
+            </div>
     </section>
+
     <section class="ParcelOut">
-        <span></span><h2>친환경 도시텃밭 분양</h2><span></span>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <button>분양 신청</button>
+        <div>
+            <span></span><h2>친환경 도시텃밭 분양</h2><span></span>
+        </div>
+        <div><img src="images/leaves_left.png" alt="">
+            <img src="images/main_D.png" alt="">
+            <p>낭만을 분양 받으세요 <br>
+                <mark>-Choi.D.Jun-</mark></p>
+            <img src="images/leaves_right.png" alt="">
+        </div>
+        <a href="Sale_list.html">분양 신청</a>
     </section>
+
     <section class="WiseSaying">
-        <h2>‘‘<br/>농부는 굶어죽을지라도 그 종자를 베고 죽는다.<br/>’’<br/>-다산 정약용-</h2>
+        <div>
+            <h2>‘‘<br/>농부는 굶어죽을지라도 그 종자를 베고 죽는다.<br/>’’<br/>-다산 정약용-</h2>
+        </div>
     </section>
 
 
@@ -130,9 +135,9 @@
         </div>
         <div>
             <address>
-                E-Mail :<a href="gksrlvy7138@gmail.com">gksrlvy7138@gmail.com</a>
-                " 주소 : 서울시 서초구 서초대로74길 33 비트빌 3층"
-                Tel :<a href="tel:+820234863456">02 - 3486 - 3456</a>
+                <p>E-Mail :<a href="gksrlvy7138@gmail.com"> gksrlvy7138@gmail.com</a></p>
+                <p>" 주소 : 서울시 서초구 서초대로74길 33 비트빌 3층"</p>
+                <p>Tel :<a href="tel:+820234863456"> 02 - 3486 - 3456</a></p>
             </address>
         </div>
     </footer>

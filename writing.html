@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글 작성</title>
     <link rel="stylesheet" href="css/import.css">
+    <script src="js/images_file.js"></script>
 </head>
 <body>
     <header class="ColorH">
-        <h1><img src="images/Color_Logo.png" alt="">My Little Farm</h1>
+        <h1><img src="images/Color_Logo.png" alt=""></h1>
         <nav>
             <ul>
                 <li>운영정보
@@ -32,7 +33,7 @@
                 </li>
                 <li>공유
                     <ul>
-                        <li><a href="Selling">내 작물 판매</a></li>
+                        <li><a href="Selling.html">내 작물 판매</a></li>
                         <li><a href="Free_selling.html">내 작물 무료나눔</a></li>
                     </ul>
                 </li>
@@ -62,6 +63,9 @@
                 </select>
                 <label for="">제목</label>
                 <input type="text" placeholder="제목을 입력하여 주세요"> <span>임시 저장한 글</span>
+
+                <input type="file" id="fileUpload" accept='image/*' />
+                <img id="previewImg" width="700" alt="이미지 영역" />
              </div>
              <div>
                 <!-- <label for=""></label>

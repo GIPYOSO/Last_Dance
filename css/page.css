@@ -7,24 +7,154 @@
 
 @media screen and (min-width: 1280px){
     .mainbackground{
-        max-width: 1920px; width: 100%; height: 100vh; position: relative;
+        max-width: 1920px; width: 100%; height: 100vh; position: relative; background-repeat: cover;
     }
-    video{
+    .mainbackground video{
         position: absolute; width: 100%; height: 100vh; object-fit: cover;
     }
-    .MainV{
-        max-width: 1920px; width: 100%; height: 100vh; position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1;
+    .mainbackground .MainV{
+        max-width: 1920px; width: 100%; height: 100vh; position: absolute; z-index: 1;
         background: rgba(0,0,0,0.6);
     }
     .MainV > div{
-        text-align: center; margin-top: 30%;
+        text-align: center; margin-top: 17%; line-height: 100px;
     }
     .MainV > div h2{
-        font-family: 'Tiro Devanagari Sanskrit Regular';
+        font-family: 'Tiro Devanagari Sanskrit Regular'; font-size: 60px; font-weight: normal;
+        margin-bottom: 120px;
     }
     .MainV > div h2, .MainV > div p, .MainV > div button{
         color: #fff;
     }
+    .MainV > div a{
+        background: none; border: 1px solid #fff; padding: 14px 49px; color: #fff;
+    }
+    
+    .WeatherSection{
+        max-width: 1920px; width: 100%; background: url(../images/main_weather_bg.png) no-repeat;
+        text-align: center;
+    }
+    .WeatherSection h2{
+        font-size: 60px; text-align: center; padding-top: 60px; color: 627200; margin-bottom: 70px;
+        font-family: 'Tiro Devanagari Sanskrit Regular'; font-weight: normal; color: #627200;
+    }
+    .WeatherSection > div{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+    }
+    .WeatherSection > div::after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .WeatherSection > div h3{
+        font-size: 40px; margin-bottom: 20px; font-family:'Tiro Devanagari Sanskrit Regular';
+    }
+    .WeatherSection > div div{
+        width: 20%; float: left;
+    }
+    .WeatherSection > div div title{
+        display: block;
+    }
+    .WeatherSection > div div p{
+        font-size: 30px; margin-bottom: 20px;
+    }
+    .WeatherSection > div div ul{
+        list-style: none; width: 100%; float: left; text-align: center;
+    }
+    .WeatherSection > div div ul::after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .WeatherSection > div div ul li{
+        color: black; line-height: 25px;
+    }
+    .WeatherSection > div:last-of-type{
+        padding-bottom: 45px;
+    }
+    .WeatherSection > img{
+        width: 40%; padding-bottom: 60px;
+    }
+    .WeatherSection > img:last-of-type{
+        width: 30%;
+    }
+    .hob{
+        max-width: 1920px; width: 100%; background: url(../images/vage.jpg) no-repeat; text-align: center;
+        background-size: cover;
+    }
+    .hob div{
+        background: rgba(0,0,0,0.4);
+    }
+    .hob h2{
+        font-size: 40px; color: #fff; padding: 135px 0 20px 0;
+    }
+    .hob p{
+        font-size: 25px; color: #fff; padding-bottom: 135px; line-height: 40px;
+    }
+    .ParcelOut{
+        max-width: 1920px; width: 100%; background: url(../images/main_D_bg.png) no-repeat;
+        margin: 0 auto; height: 1183px;
+    }
+    .ParcelOut div:first-of-type{
+        width: 100%; padding-top: 60px; display: flex; justify-content: center; align-items: center;
+        margin-bottom: 130px;
+    }
+    .ParcelOut div:after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .ParcelOut div span{
+        float: left; border-bottom: 2px solid #627200; width: 6%; display: block;
+    }
+    .ParcelOut div h2{
+        font-size: 60px; color: #627200; float: left; margin: 0 3%;
+    }
+    .ParcelOut div:last-of-type{
+        display: flex; justify-content: center; align-items: center; position: relative;
+        margin-bottom: 60px;
+    }
+    .ParcelOut div:last-of-type img:first-of-type{
+        position: absolute; top: -50px; left: 0px; display: block; max-width: 100%;
+    }
+    .ParcelOut div:last-of-type img:nth-of-type(2){
+        z-index: 1; width: 40%;
+    }
+    .ParcelOut div:last-of-type img:last-of-type{
+        position: absolute; top: -50px; right: 0; display: block; max-width: 100%;
+    }
+    .ParcelOut div:last-of-type p{
+        position: absolute; color: #fff; font-size: 30px; text-align: center; line-height: 45px;
+        z-index: 2;
+    }
+    .ParcelOut div:last-of-type p mark{
+        font-family: 'Tiro Devanagari Sanskrit Regular'; background: none; color: #fff;
+        font-weight: normal;
+    }
+    .ParcelOut a{
+        display: block; margin: 0 auto; border: 1px solid #627200; color: #627200;
+        text-align: center; width: 7.8%; line-height: 50px; font-size: 20px; font-family: 'Noto Sans KR'; font-weight: bold;
+    }
+    .WiseSaying{
+        max-width: 1920px; width: 100%; background: url(../images/main_yhp.jpg) no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .WiseSaying div{
+        background: rgba(0,0,0,0.4); padding: 220px 0 200px;
+    }
+    .WiseSaying div h2{
+        font-size: 40px; color: #fff; line-height: 55px; font-family: 'Noto Sans KR';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,8 +164,7 @@
         display: flex; align-items: center; justify-content: center; height: 100vh;
     }
     .calendar .content-wrap{
-        width: 800px; height: 600px; margin:0 auto;
-        overflow: hidden; 
+        width: 800px; height: 600px; overflow: hidden; 
     }
     .calendar .content-left{
         background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
@@ -91,7 +220,10 @@
     .calendar .content-right table tr td{
         width: 50px; height: 50px; text-align: center; font-size: 20px; vertical-align: middle;
     }
-    .calendar .calendar-body tr td{
+    .calendar .content-right thead{
+        font-family: 'Tiro Devanagari Sanskrit Regular';
+    }
+    .calendar .calendar-body tbody tr td{
         cursor: pointer; font-family: 'Noto Sans KR'; font-weight: bold;
     } 
     .active{
