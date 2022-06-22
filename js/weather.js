@@ -16,7 +16,7 @@ $.ajax({
   success: function(data) {
     console.log('Received data:', data) // For testing
     var wf = "";
-    wf += "<h3>" + data.city.name + "</h3>" // City (displays once)
+    wf += "<h3>" + data.city.name + " Weather" + "</h3>" // City (displays once)
     $.each(data.list, function(index, val) {
       wf += "<div><title>" + val.dt_txt + "</title>" // Icon
       wf += "<img src='https://openweathermap.org/img/w/" + val.weather[0].icon + ".png'>" // Icon
