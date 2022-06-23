@@ -204,7 +204,7 @@
     .loginSection form fieldset > div div a:not(:first-of-type){
         margin-left: 10px; border-left: 1px solid #627200; padding-left: 10px;
     }
-    /*! Login Page fin*/
+    /*! Login Page fin */
     
     .joinSection{
         max-width: 1920px; width: 100%; display: flex; justify-content: center; align-items: center;
@@ -246,9 +246,43 @@
         text-align: center;
     }
     .joinSection form div button:last-of-type{
-        border: none; width: 30%; background: #627200; line-height: 45px;
-        color: #fff; cursor: pointer; font-size: 20px; border-radius: 5px; font-family: 'Noto Sans KR';
+        border: none; width: 30%; background: #627200; line-height: 45px; font-family: 'Noto Sans KR';
+        color: #fff; cursor: pointer; font-size: 20px; border-radius: 5px; 
     }
+    /*! 회원가입 fin */
+    
+    .opin_bg{
+        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 410px;
+        text-indent: -9999px; margin-bottom: 95px;
+    }
+    .operationS{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+    }
+    .operationS h2{
+        font-size: 60px; margin-bottom: 60px; font-family: 'Noto Sans KR';
+    }
+    .operationS > p{
+        font-size: 40px; margin-bottom: 5px;
+    }
+    .operationS ul,
+    .operationS ol{
+        list-style: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

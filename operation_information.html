@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>운영정보</title>
     <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/global.js"></script>
+    <script src="js/accordion.js"></script>
 </head>
 <body>
     <header class="ColorH">
@@ -49,12 +52,12 @@
 
     <div class="opin_bg">operation_inpormationBG</div>
     
-    <section>
-        <h2></h2>
-        <p></p>
-        <ul>
+    <section class="operationS">
+        <h2>운영정보</h2>
+        <p>작물농사 방법</p>
+        <ul class="accordionContainer">
             <li>
-                <div>도심속 친환경 ‘빗물 정원’</div>
+                <div>도심속 친환경 ‘빗물 정원’<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <p>농촌진흥청은 도심 홍수를 예방하기 위해 빗물을 바로 흡수하는 빗물정원에 대해 소개하고 습기가 많은 환경에서도 생육이 가능해 빗물정원용으로 적합한 식물을 제시했다.</p>
 
@@ -85,7 +88,7 @@
                     <p>[문의] 농촌진흥청 도시농업연구팀장 송정섭, 도시농업연구팀 한승원 031-290-6168</div>
             </li>
             <li>
-                <div>와인붐으로 재조명되는 포도기르기</div>
+                <div>와인붐으로 재조명되는 포도기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <p>○ 묘목 선택 및 심기</p>
                     포도는 삽목묘도 뿌리가 잘 내려 열매를 맺는데 지장이 없다. 다만, 줄기가 너무 가늘거나 굵지 않고 볼펜 정도 굵기로 단단하게 자란 것을 택한다. 포도나무를 심는 시기는 땅이 녹은 후 3월 하순경이 적당하며 물 빠짐이 좋고, 햇빛이 잘 드는 장소가 좋다.</p>
@@ -104,7 +107,7 @@
                     포도는 다른 과수와 달리 수정 후에는 생리적 낙과가 없어 인위적으로 송이솎기를 하지 않으면 과다착과에 의한 착색 및 성숙불량을 막을 수 있다. 송이솎기는 시기가 빠를수록 양분 소모가 적어 품질향상에 효과적이지만, 수세 및 기후 등에 의해 발생되는 꽃떨이현상 등을 감안해 만개 10일후부터 실시한다.</div>
             </li>
             <li>
-                <div>글탱글 야생 체리 양앵두기르기</div>
+                <div>글탱글 야생 체리 양앵두기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <p>묘목의 선택</p>      
                     <p>양앵두는 야생 체리라 할 수 있는 청엽앵(靑葉櫻), 마자드, 마하렙 등을 대목으로 이용하여 오다가 나무가 너무 크기 때문에 최근에는 콜트와 왜성대목 계통인 기셀라(gisela) 혹은, GM계의 대목이 이용되고 있다. 왜성대목은 초기 뿌리활착이 잘 되지 않기 때문에 특히 뿌리가 잘 발달된 묘목을 골라 심어야 한다. 뿌리는 건조하면 빨리 말라 죽기 때문에 구입하면 즉시 물에 6-12 시간 침지시켜 물을 충분히 흡수시켜 재식 해야 활착이 잘된다. 묘목은 재식이 끝날 때까지 직사광선에 노출시키지 않도록 하고 심는 구덩이는 깊이 70, 폭 100cm정도로 파고 특히 표토가 얕고 자갈이 많은 곳은 건조피해가 염려되므로 크게 파고, 배수가 불량하거나 지하수위가 높은 곳은 구덩이를 얕게 파서 나무를 올려 심는다.</p>
@@ -139,7 +142,7 @@
                 </div>
             </li>
             <li>
-                <div>껍질까지 먹어 영양 2배! 금감기르기</div>
+                <div>껍질까지 먹어 영양 2배! 금감기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>1. 명칭
@@ -255,7 +258,7 @@
                 </div>
             </li>
             <li>
-                <div>한국인의 비타민 보고 온주밀감기르기</div>
+                <div>한국인의 비타민 보고 온주밀감기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -334,7 +337,7 @@
                 </div>
             </li>
             <li>
-                <div>가공식품의 대표주자 매실기르기</div>
+                <div>가공식품의 대표주자 매실기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -418,7 +421,7 @@
                 </div>
             </li>
             <li>
-                <div>상품가치가 큰 한라봉기르기</div>
+                <div>상품가치가 큰 한라봉기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>1. 명칭
@@ -522,7 +525,7 @@
                 </div>
             </li>
             <li>
-                <div>노지활용에 좋은 잎들깨기르기</div>
+                <div>노지활용에 좋은 잎들깨기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <p>꿀풀과에 속하는 1년생 초본으로서 한국 등 동부 아시아가 원산지이다. 들깨는 기름을 이용하기 위하여 오래전부터 재배해오던 작물인데, 최근 1970년대 이후에 쌈채소로 이용하면서 신선 잎들깨의 재배가 급격히 증가하였다.</p>
                     <p>예부터 들깨와 비슷한 차조기라는 식물은 약용 또는 색소용으로 이용하여 왔고 인절미 등 떡에 붉은색 무늬를 넣기 위해 사용하기도 한다. 일본에서는 차조기 종류를 양액재배로 많이 생산하고 있으며 회 등에 곁들여서 향신용 채소로 이용하고 있다.</p>
@@ -562,7 +565,7 @@
                 </div>
             </li>
             <li>
-                <div>향긋한 더덕 기르기</div>
+                <div>향긋한 더덕 기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <mark>더덕을 이용한 텃밭가꾸기 재배법</mark>
                     <ol>
@@ -654,7 +657,7 @@
                 </div>
             </li>
             <li>
-                <div>생으로, 말려서, 갈아서, 사업 활용도가 다양한 자두 기르기</div>
+                <div>생으로, 말려서, 갈아서, 사업 활용도가 다양한 자두 기르기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>가. 묘목의 선택 
@@ -700,7 +703,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-엔다이브</div>
+                <div>텃밭가꾸기-엔다이브<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -765,10 +768,10 @@
         </ul>
     </section>
 
-    <section>
-        <ul>
+    <section class="operationS">
+        <ul class="accordionContainer">
             <li>
-                <div>텃밭가꾸기-도라지</div>
+                <div>텃밭가꾸기-도라지<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -808,7 +811,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-인삼</div>
+                <div>텃밭가꾸기-인삼<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol> 
                         <li>예정지 관리 <br>
@@ -850,7 +853,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-버섯</div>
+                <div>텃밭가꾸기-버섯<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>1. 배경
@@ -882,7 +885,7 @@
                 </div>
             </li>
             <li>
-                <div>사과 키우기</div>
+                <div>사과 키우기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -904,7 +907,7 @@
                 </div>
             </li>
             <li>
-                <div>미나리 텃밭가꾸기</div>
+                <div>미나리 텃밭가꾸기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -956,7 +959,7 @@
                 </div>
             </li>
             <li>
-                <div>친환경 딸기 텃밭가꾸기</div>
+                <div>친환경 딸기 텃밭가꾸기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1012,7 +1015,7 @@
                 </div>
             </li>
             <li>
-                <div>금감(금귤,낑깡) 키우기</div>
+                <div>금감(금귤,낑깡) 키우기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1096,7 +1099,7 @@
                 </div>
             </li>
             <li>
-                <div>모과나무 가꾸기</div>
+                <div>모과나무 가꾸기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1164,7 +1167,7 @@
                 </div>
             </li>
             <li>
-                <div>가정에서 감귤 키우기</div>
+                <div>가정에서 감귤 키우기<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1211,7 +1214,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-복숭아</div>
+                <div>텃밭가꾸기-복숭아<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1315,7 +1318,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-살구</div>
+                <div>텃밭가꾸기-살구<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1404,10 +1407,10 @@
         </ul>
     </section>
 
-    <section>
-        <ul>
+    <section class="operationS">
+        <ul  class="accordionContainer">
             <li>
-                <div>텃밭가꾸기-석류</div>
+                <div>텃밭가꾸기-석류<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1472,7 +1475,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-블루베리</div>
+                <div>텃밭가꾸기-블루베리<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1572,7 +1575,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-브로콜리</div>
+                <div>텃밭가꾸기-브로콜리<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1610,7 +1613,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-비트</div>
+                <div>텃밭가꾸기-비트<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1658,7 +1661,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-수박</div>
+                <div>텃밭가꾸기-수박<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1702,7 +1705,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-참외</div>
+                <div>텃밭가꾸기-참외<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1747,7 +1750,7 @@
                 </div>
             </li>
             <li>
-                <div>텃밭가꾸기-호박</div>
+                <div>텃밭가꾸기-호박<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>
@@ -1790,7 +1793,7 @@
                 </div>
             </li>
             <li>
-                <div>어, 베란다가 텃밭이 됐네!</div>
+                <div>어, 베란다가 텃밭이 됐네!<span class="material-icons-outlined">keyboard_arrow_down</span></div>
                 <div>
                     <ol>
                         <li>- 아침에 먹는 싱싱한 채소... 이 맛이 꿀맛 -
