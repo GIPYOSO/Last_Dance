@@ -8,7 +8,7 @@ a{
     }
     .ColorH{
         padding-left: 3%; max-width: 1920px; color: #627200; width: 97%; top: 30px; line-height: 15px;
-        margin-top: 30px; border-bottom: 1px solid #627200;
+        margin-top: 30px; border-bottom: 1px solid #627200; font-family: 'Noto snas KR';
     }
     .NoneColor-Header{
         max-width: 1920px; position: absolute; z-index: 3; color: white; width: 97%; left: 3%;
@@ -18,7 +18,9 @@ a{
     .ColorH:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    .NoneColor-Header > h1,
+    .NoneColor-Header > h1{
+        max-width: 40px; float: left; width: 100%;
+    }
     .ColorH > h1{
         max-width: 40px; float: left; width: 100%; margin-bottom: 30px;
     }
@@ -28,8 +30,7 @@ a{
     }
     .NoneColor-Header nav,
     .ColorH nav{
-        width: 76%; float: left; right: 0; top: 0; margin-left: 2.5%;
-        box-sizing: border-box; text-align: left; vertical-align: middle;
+        width: 76%; float: left; margin-left: 2.5%; box-sizing: border-box;
     }
     .NoneColor-Header nav > ul > li,
     .ColorH nav > ul > li{
@@ -54,11 +55,18 @@ a{
     .ColorH nav:hover > ul > li ul li{
         font-size: 16px;
     }
+    .NoneColor-Header span,
+    .ColorH span{
+        margin-top: 10px;
+    }
+    header span a{
+        line-height: 55px; margin-left: 10%; font-size: 20px; font-weight: bold;
+    }
     .NoneColor-Header span a{
-        line-height: 55px; margin-left: 10%; color: #fff; font-size: 20px; font-weight: bold;
+        color: #fff;
     }
     .ColorH span a{
-        line-height: 55px; margin-left: 10%; color: #627200; font-size: 20px; font-weight: bold;
+        color: #627200;
     } 
     /*! header */
 

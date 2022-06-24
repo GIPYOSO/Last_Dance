@@ -46,10 +46,11 @@
         </label>
         <span><a href="login.html">로그인</a></span>
     </header>
+    <div class="comubg">comuBG</div>
 
-    <section>
-        <h2></h2>
-        <div class="inventory">
+    <section class="tableSection">
+        <h2>질문 게시판</h2>
+        <div id="Qtab1" class="inventory1 tabPg active">
             <table>
                 <tbody>
                     <tr>
@@ -59,7 +60,7 @@
                         <th>조회</th>
                     </tr>
                     <tr>
-                        <td><a href=""><maker>필독 게시판 이용시 유의할 점 + 활동정지 기준 + 신고방법</maker></a></td>
+                        <td><a href=""><mark>필독 게시판 이용시 유의할 점 + 활동정지 기준 + 신고방법</mark></a></td>
                         <td>운영자</td>
                         <td>2022.06.08</td>
                         <td>4540</td>
@@ -127,14 +128,18 @@
                 </tbody>
             </table>
         </div> 
-        <button>글쓰기</button>
+        <div>
+            <button>글쓰기</button>
+        </div>
     </section>
 
-    <ol>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-    </ol>
+    <div class="paging">
+        <ol>
+            <li class="tabBtn active" data-tab="Qtab1">1</li>
+            <li class="tabBtn" data-tab="Qtab2">2</li>
+            <li class="tabBtn" data-tab="Qtab3">3</li>
+        </ol>
+    </div>
 
     <footer>
         <div>
