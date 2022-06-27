@@ -57,7 +57,7 @@
         font-size: 30px; margin-bottom: 20px;
     }
     .WeatherSection > div div ul{
-        list-style: none; width: 100%; float: left; text-align: center;
+        width: 100%; float: left; text-align: center;
     }
     .WeatherSection > div div ul::after{
         display: block; content: ''; visibility: hidden; clear: both;
@@ -179,9 +179,6 @@
         display: block; width: 100%; height: 45px; color: #fff; font-family: 'Tiro Devanagari Sanskrit Regular';
         font-size: 30px; background-color: #627200; border: none; cursor: pointer; margin-bottom: 75px;
     }
-    .loginSection form fieldset > div ul{
-        list-style: none;
-    }
     .loginSection form fieldset > div ul li button{
         width: 100%; line-height: 50px; background: #fff; text-align: center; font-size: 25px;
         border: none; cursor: pointer;
@@ -238,6 +235,7 @@
     }
     .joinSection form select{
         margin-left: -6px; width: 25%; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%); height: 40px; vertical-align: middle;
+        border: 2px solid #627200; font-family: 'Noto Sans KR';
     }
     .joinSection form input:last-of-type{
         margin-bottom: 60px;
@@ -272,7 +270,7 @@
     }
     .operationS ul,
     .operationS ol{
-        list-style: none; font-family: 'Noto Sans KR';
+        font-family: 'Noto Sans KR';
     }
     .accordionContainer > li{
        cursor: pointer; position: relative;
@@ -347,7 +345,7 @@
     }
     .tableSection table tbody tr span{
         font-size: 13px; background: #FFC2C2; color: #FE0000;
-        width: 55px; line-height: 25px; position: absolute;
+        width: 55px; line-height: 25px; position: absolute; padding: 0 5px;
     }
     .tableSection table tbody tr th:first-child{
         width: 68%;
@@ -397,9 +395,108 @@
 
     /*! 자유게시판, 공지사항 fin */
     
-
-
-
+    .readpage{
+        max-width: 1100px; width: 100%; margin: 0 auto;
+    }
+    .readpage h2{
+        text-indent: -9999px;
+    }
+    .readpage > div:first-of-type{
+        text-align: right; margin-bottom: 20px;
+    }
+    .readpage > div:first-of-type button:first-child{
+        width: 5.9%;
+    }
+    .readpage > div:first-of-type button{
+        background: #627200; border: none; color: #fff; width: 10%; height: 50px;
+        border-radius: 7px;
+    }
+    .readpage > div:first-of-type button:not(:first-child){
+        margin-left: 0.3%;
+    }
+    .readpage > div:first-of-type button a{
+        font-size: 20px; color: #fff;
+    }
+    .readpage button span{
+        font-size: 16px; padding-right: 10%;
+    }
+    .readpage > div:nth-of-type(2){
+        border: 1px solid #627200; padding: 2%; font-family: 'Noto Sans KR'; box-sizing: border-box;
+        margin-bottom: 65px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type{
+        border-bottom: 2px solid #627200; margin-bottom: 30px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type a{
+        color: #627200; font-weight: bold;
+        font-size: 20px; margin-bottom: 15px; display: block;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type h3{
+        color: #FE0000; font-size: 20px; margin-bottom: 15px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type h3 span{
+        display: inline-block; background: #FFC2C2; width: 4%; text-align: center;
+        font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type p{
+        font-size: 13px; color: black;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type time{
+        display: block; font-size: 10px; color: #adadad; margin-bottom: 25px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
+        display: block; background: none; font-style: normal; font-size: 15px; color: #FE0000;
+        margin-bottom: 40px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) h3{
+        text-align: center; font-size: 36px; margin-bottom: 65px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+        font-size: 20px; font-weight: bold;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){
+        margin-bottom: 0;
+    }
+    
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:not(:nth-of-type(6)){
+        margin-bottom: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol{
+        margin-left: 3.26%; margin-bottom: 50px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol li{
+        font-size: 16px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol li:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(7){
+        margin-bottom: 0;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(8){
+        margin-bottom: 95px; font-size: 16px; font-weight: normal;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2){
+        margin-bottom: 95px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type){
+        text-align: center;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type) p{
+        line-height: 30px; font-size: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type) p:nth-child(3){
+        font-size: 24px; color: #FE0000;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type p:last-of-type{
+        margin-bottom: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type ol li{
+        font-size: 20px; line-height: 30px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type ol li{
+        margin-bottom: 40px;
+    }
 
 
 

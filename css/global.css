@@ -49,7 +49,7 @@ a{
     }
     .NoneColor-Header nav:hover > ul > li ul,
     .ColorH nav:hover > ul > li ul{
-        height: 100px;
+        height: 170px;
     }
     .NoneColor-Header nav:hover > ul > li ul li,
     .ColorH nav:hover > ul > li ul li{
@@ -87,16 +87,48 @@ a{
     }
     .paging ol li.active{
         box-shadow: 5px 5px 5px rgb(58 74 0 / 60%);
-        
     }
     .paging ol li:not(:first-child){
         margin-left: 1.18%; font-size: 16px; font-family: 'Noto Sans KR';
     }
 
+    /*! Paging fin*/
 
-
-
-
+    .CommentForm div{
+        border-bottom: 2px solid #627200; position: relative; margin-bottom: 30px;
+    }
+    .CommentForm div h3{
+        display: inline-block; margin: 0 2% 10px 0; font-size: 20px; font-weight: normal;
+    }
+    .CommentForm div span:last-child{
+       font-size: 20px; position: absolute; right: 0;
+    }
+    .CommentForm input{
+        width: 92.72%; box-sizing: border-box; height: 25px;
+        border: 1px solid #627200; margin-bottom: 60px;
+    }
+    .CommentForm button{
+        font-size: 15px;border: none; background: #627200; color: #fff;
+        width: 7.27%; height: 25px; vertical-align: middle; cursor: pointer;
+    }
+    .CommentForm ul{
+        margin-bottom: 80px;
+    }
+    .CommentForm ul li{
+        border-bottom: 1px solid #627200;
+    }
+    .CommentForm ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .CommentForm ul li h4,
+    .CommentForm ul li p,
+    .CommentForm ul li time{
+        font-size: 13px; margin-bottom: 10px;
+    }
+    .CommentForm ul li time{
+        display: block; color: #A2A2A2;
+    }
+    /*! Comment Form fin*/
 
     
     footer{

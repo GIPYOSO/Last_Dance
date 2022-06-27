@@ -92,3 +92,7 @@ hr {
 select {
     vertical-align:middle;
 }
+
+ol, ul{
+    list-style: none;
+}
