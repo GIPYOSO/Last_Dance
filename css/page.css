@@ -1,3 +1,15 @@
+.MainV > div h2, .WeatherSection h2, .WeatherSection > div h3, .ParcelOut div:last-of-type p mark, .loginSection form fieldset h2,
+.loginSection form fieldset > div input:last-of-type, .joinSection form h2, .calendar .input-data, .calendar .input-box, .calendar .content-right thead{
+    font-family: 'Tiro Devanagari Sanskrit Regular';
+}
+
+.ParcelOut a, .WiseSaying div h2, .loginSection form fieldset p, .joinSection form p, .joinSection form label, .joinSection form select,
+.joinSection form div button:last-of-type, .operationS h2, .operationS ul, .operationS ol, .tableSection h2, .tableSection1 h2, .readpage > div:nth-of-type(2), 
+.readpage1, .calendar .main-date, .calendar .calendar-body tbody tr td{
+    font-family: 'Noto Sans KR';
+}
+
+
 @media screen and (max-width: 767px) {}
 
 /* ? mobile */
@@ -20,7 +32,7 @@
         text-align: center; margin-top: 17%; line-height: 100px;
     }
     .MainV > div h2{
-        font-family: 'Tiro Devanagari Sanskrit Regular'; font-size: 60px; font-weight: normal;
+        font-size: 60px; font-weight: normal;
         margin-bottom: 120px;
     }
     .MainV > div h2, .MainV > div p, .MainV > div button{
@@ -36,7 +48,7 @@
     }
     .WeatherSection h2{
         font-size: 60px; text-align: center; padding-top: 60px; color: 627200; margin-bottom: 70px;
-        font-family: 'Tiro Devanagari Sanskrit Regular'; font-weight: normal; color: #627200;
+        font-weight: normal; color: #627200;
     }
     .WeatherSection > div{
         max-width: 1440px; width: 100%; margin: 0 auto;
@@ -45,7 +57,7 @@
         display: block; content: ''; visibility: hidden; clear: both;
     }
     .WeatherSection > div h3{
-        font-size: 40px; margin-bottom: 20px; font-family:'Tiro Devanagari Sanskrit Regular';
+        font-size: 40px; margin-bottom: 20px;
     }
     .WeatherSection > div div{
         width: 20%; float: left;
@@ -69,10 +81,7 @@
         padding-bottom: 45px;
     }
     .WeatherSection > img{
-        width: 40%; padding-bottom: 60px;
-    }
-    .WeatherSection > img:last-of-type{
-        width: 30%;
+        width: 80%; margin-bottom: -4px;
     }
     .hob{
         max-width: 1920px; width: 100%; background: url(../images/vage.jpg) no-repeat; text-align: center;
@@ -122,23 +131,22 @@
         z-index: 2;
     }
     .ParcelOut div:last-of-type p mark{
-        font-family: 'Tiro Devanagari Sanskrit Regular'; background: none; color: #fff;
+        background: none; color: #fff;
         font-weight: normal;
     }
     .ParcelOut a{
         display: block; margin: 0 auto; border: 1px solid #627200; color: #627200;
-        text-align: center; width: 7.8%; line-height: 50px; font-size: 20px; font-family: 'Noto Sans KR'; font-weight: bold;
+        text-align: center; width: 7.8%; line-height: 50px; font-size: 20px; font-weight: bold;
     }
     .WiseSaying{
         max-width: 1920px; width: 100%; background: url(../images/main_yhp.jpg) no-repeat;
-        background-size: cover;
-        text-align: center;
+        background-size: cover; text-align: center;
     }
     .WiseSaying div{
         background: rgba(0,0,0,0.4); padding: 220px 0 200px;
     }
     .WiseSaying div h2{
-        font-size: 40px; color: #fff; line-height: 55px; font-family: 'Noto Sans KR';
+        font-size: 40px; color: #fff; line-height: 55px;
     }
     /*! Main Page fin */
 
@@ -155,10 +163,10 @@
     }
     .loginSection form fieldset p{
         margin: 30px 0 10px; font-size: 30px; color: #627200;
-        font-family: 'Noto Sans KR'; text-align: center;
+        text-align: center;
     }
     .loginSection form fieldset h2{
-        font-family: 'Tiro Devanagari Sanskrit Regular'; font-weight: normal; font-size: 30px;
+        font-weight: normal; font-size: 30px;
         color: #627200; margin-bottom: 30px; text-align: center;
     }
     .loginSection form fieldset > div{
@@ -176,7 +184,7 @@
         vertical-align: none;
     }
     .loginSection form fieldset > div input:last-of-type{
-        display: block; width: 100%; height: 45px; color: #fff; font-family: 'Tiro Devanagari Sanskrit Regular';
+        display: block; width: 100%; height: 45px; color: #fff;
         font-size: 30px; background-color: #627200; border: none; cursor: pointer; margin-bottom: 75px;
     }
     .loginSection form fieldset > div ul li button{
@@ -212,14 +220,12 @@
     }
     .joinSection form p{
         font-size: 30px; text-align: center; margin-bottom: 20px;
-        font-family: 'Noto Sans KR';
     }
     .joinSection form h2{
-        font-size: 30px; text-align: center; margin-bottom: 60px;
-        font-family: 'Tiro Devanagari Sanskrit Regular'; font-weight: normal;
+        font-size: 30px; text-align: center; margin-bottom: 60px; font-weight: normal;
     }
     .joinSection form label{
-        display: block; font-size: 25px; font-family: 'Noto Sans KR'; margin-bottom: 5px;
+        display: block; font-size: 25px; margin-bottom: 5px;
     }
     .joinSection form input{
         margin-bottom: 10px; width: 100%; background: rgb(226, 226, 226); border: none; height: 40px;
@@ -235,7 +241,7 @@
     }
     .joinSection form select{
         margin-left: -6px; width: 25%; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%); height: 40px; vertical-align: middle;
-        border: 2px solid #627200; font-family: 'Noto Sans KR';
+        border: 2px solid #627200;
     }
     .joinSection form input:last-of-type{
         margin-bottom: 60px;
@@ -244,7 +250,7 @@
         text-align: center;
     }
     .joinSection form div button:last-of-type{
-        border: none; width: 30%; background: #627200; line-height: 45px; font-family: 'Noto Sans KR';
+        border: none; width: 30%; background: #627200; line-height: 45px;
         color: #fff; cursor: pointer; font-size: 20px; border-radius: 5px; 
     }
     /*! 회원가입 fin */
@@ -263,14 +269,10 @@
         display: block;
     }
     .operationS h2{
-        font-size: 60px; margin-bottom: 60px; font-family: 'Noto Sans KR';
+        font-size: 60px; margin-bottom: 60px;
     }
     .operationS > p{
         font-size: 40px; margin-bottom: 10px;
-    }
-    .operationS ul,
-    .operationS ol{
-        font-family: 'Noto Sans KR';
     }
     .accordionContainer > li{
        cursor: pointer; position: relative;
@@ -296,7 +298,7 @@
         display: none;
     }
     .accordionContainer > li > div:last-child p{
-        padding: 10px 2%; color: #FFEBD3;
+        padding: 10px 2%; color: #FFEBD3; font-size: 18px; line-height: 30px;
     }
     .accordionContainer > li > div:last-child mark{
         background: none; font-weight: bold; font-style: normal;
@@ -320,9 +322,12 @@
     }
 
     /*! 운영정보 Page fin */
-
+    .gong{
+        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.png ) no-repeat;
+        background-size: cover; text-indent: -9999px; margin-bottom: 95px;
+    }
     .comubg{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/sotong.png) no-repeat;
+        max-width: 1920px; width: 100%; height: 410px; background: url(../images/comuBG.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .tableSection,
@@ -331,7 +336,7 @@
     }
     .tableSection h2,
     .tableSection1 h2{
-        font-size: 60px; margin-bottom: 60px; font-family: 'Noto Sans KR';
+        font-size: 60px; margin-bottom: 60px
     }
     [class ^= 'inventory']{
         display: none;
@@ -395,54 +400,72 @@
 
     /*! 자유게시판, 공지사항 fin */
     
-    .readpage{
+    .readpage, .readpage1{
         max-width: 1100px; width: 100%; margin: 0 auto;
     }
-    .readpage h2{
+    .readpage h2, .readpage1 h2{
         text-indent: -9999px;
     }
-    .readpage > div:first-of-type{
+    .readpage > div:first-of-type,
+    .readpage1 > div:first-of-type{
         text-align: right; margin-bottom: 20px;
     }
-    .readpage > div:first-of-type button:first-child{
+    .readpage > div:first-of-type button:first-child,
+    .readpage1 > div:first-of-type button:first-child{
         width: 5.9%;
     }
-    .readpage > div:first-of-type button{
+    .readpage > div:first-of-type button,
+    .readpage1 > div:first-of-type button{
         background: #627200; border: none; color: #fff; width: 10%; height: 50px;
         border-radius: 7px;
     }
-    .readpage > div:first-of-type button:not(:first-child){
+    .readpage > div:first-of-type button:not(:first-child),
+    .readpage1 > div:first-of-type button:not(:first-child){
         margin-left: 0.3%;
     }
-    .readpage > div:first-of-type button a{
+    .readpage > div:first-of-type button a,
+    .readpage1 > div:first-of-type button a{
         font-size: 20px; color: #fff;
     }
-    .readpage button span{
+    .readpage button span,
+    .readpage1 button span{
         font-size: 16px; padding-right: 10%;
     }
     .readpage > div:nth-of-type(2){
-        border: 1px solid #627200; padding: 2%; font-family: 'Noto Sans KR'; box-sizing: border-box;
+        border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 65px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type{
+    .readpage1 > div:nth-of-type(2){
+        border: 1px solid #627200; padding: 2%; box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type{
         border-bottom: 2px solid #627200; margin-bottom: 30px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type a{
+    .readpage > div:nth-of-type(2) > div:first-of-type a,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type a{
         color: #627200; font-weight: bold;
         font-size: 20px; margin-bottom: 15px; display: block;
     }
     .readpage > div:nth-of-type(2) > div:first-of-type h3{
         color: #FE0000; font-size: 20px; margin-bottom: 15px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type h3 span{
+    .readpage1 > div:nth-of-type(2) > div:first-of-type h3{
+        font-size: 20px; margin-bottom: 15px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type h3 span,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 span{
         display: inline-block; background: #FFC2C2; width: 4%; text-align: center;
         font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type p{
-        font-size: 13px; color: black;
+    .readpage > div:nth-of-type(2) > div:first-of-type p,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type p{
+        font-size: 15px; color: black;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type time{
-        display: block; font-size: 10px; color: #adadad; margin-bottom: 25px;
+    .readpage > div:nth-of-type(2) > div:first-of-type time,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type time{
+        display: block; font-size: 13px; color: #adadad; margin-bottom: 25px;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
         display: block; background: none; font-style: normal; font-size: 15px; color: #FE0000;
@@ -451,13 +474,13 @@
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) h3{
         text-align: center; font-size: 36px; margin-bottom: 65px;
     }
-    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p,
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
         font-size: 20px; font-weight: bold;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){
         margin-bottom: 0;
     }
-    
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:not(:nth-of-type(6)){
         margin-bottom: 20px;
     }
@@ -488,6 +511,12 @@
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type) p:nth-child(3){
         font-size: 24px; color: #FE0000;
     }
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) h3{
+        font-size: 36px; margin-bottom: 40px;
+    }
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p{
+        font-size: 15px; line-height: 40px;
+    }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type p:last-of-type{
         margin-bottom: 20px;
     }
@@ -496,6 +525,16 @@
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type ol li{
         margin-bottom: 40px;
+    }
+    .readpage1 > div:nth-of-type(3){
+        text-align: right; margin-bottom: 60px;
+    }
+    .readpage1 > div:nth-of-type(3) button{
+        border: none; background: #627200; width: 7.72%; height: 50px;
+        font-size: 20px; border-radius: 7px;
+    }
+    .readpage1 > div:nth-of-type(3) button a{
+        color: #fff;
     }
 
 
@@ -531,7 +570,7 @@
         font-size: 30px;
     }
     .calendar .main-date{
-        font-size: 120px; margin: 20px 0; font-family: 'Noto Sans KR'; font-weight: bold;
+        font-size: 120px; margin: 20px 0; font-weight: bold;
     }
     .calendar .todo-wrap{
         padding: 0 0 0 40px;
@@ -541,11 +580,11 @@
     }
     .calendar .input-box{
         width: 70%; height: auto; background: #0b0809; color: #FFEBD3; line-height : normal;
-        padding: .8em .5em 0 0; font-family: inherit; border: 0; border-bottom: 1px dashed #627200;; 
+        padding: .8em .5em 0 0; border: 0; border-bottom: 1px dashed #627200;; 
         border-radius: 0; outline-style: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;
     }
     .calendar .input-data{
-        cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0; font-family: 'Tiro Devanagari Sanskrit Regular';
+        cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0;
         background: #627200; border: none; color: #FFEBD3; border-radius: 10px;
     }
     .calendar .input-data:hover{
@@ -571,11 +610,8 @@
         width: 50px; height: 50px; text-align: center; font-size: 20px; vertical-align: middle;
         cursor: pointer;
     }
-    .calendar .content-right thead{
-        font-family: 'Tiro Devanagari Sanskrit Regular';
-    }
     .calendar .calendar-body tbody tr td{
-        cursor: pointer; font-family: 'Noto Sans KR'; font-weight: bold;
+        cursor: pointer; font-weight: bold;
     } 
     .calendar tr td.active{
         background: #0b0809; border-radius: 50%; color: #ffffff;

@@ -1,6 +1,13 @@
 a{
     text-decoration: none;
 }
+.ColorH, .paging ol li:not(:first-child){
+    font-family: 'Noto snas KR';
+}
+footer h1, footer > div div:last-of-type address p:not(:nth-child(2)),
+footer > div div:last-of-type address p:nth-child(2){
+    font-family: 'Tiro Devanagari Sanskrit Regular';
+}
 
 @media screen and (min-width: 1280px){
     html{
@@ -8,7 +15,7 @@ a{
     }
     .ColorH{
         padding-left: 3%; max-width: 1920px; color: #627200; width: 97%; top: 30px; line-height: 15px;
-        margin-top: 30px; border-bottom: 1px solid #627200; font-family: 'Noto snas KR';
+        margin-top: 30px; border-bottom: 1px solid #627200;
     }
     .NoneColor-Header{
         max-width: 1920px; position: absolute; z-index: 3; color: white; width: 97%; left: 3%;
@@ -89,7 +96,7 @@ a{
         box-shadow: 5px 5px 5px rgb(58 74 0 / 60%);
     }
     .paging ol li:not(:first-child){
-        margin-left: 1.18%; font-size: 16px; font-family: 'Noto Sans KR';
+        margin-left: 1.18%; font-size: 16px;
     }
 
     /*! Paging fin*/
@@ -99,6 +106,9 @@ a{
     }
     .CommentForm div h3{
         display: inline-block; margin: 0 2% 10px 0; font-size: 20px; font-weight: normal;
+    }
+    .CommentForm div span:nth-child(3){
+        color: #a2a2a2; margin-left: 0.8%;
     }
     .CommentForm div span:last-child{
        font-size: 20px; position: absolute; right: 0;
@@ -135,7 +145,7 @@ a{
         max-width: 1920px; width: 100%; background-color: #38240D; 
     }
     footer h1{
-        max-width: 1440px; margin: 0 auto; font-size: 60px; font-family: Tiro Devanagari Sanskrit Regular;
+        max-width: 1440px; margin: 0 auto; font-size: 60px;
         font-weight: normal; padding: 50px 0;
     }
     footer h1 a,
@@ -172,12 +182,6 @@ a{
     }
     footer > div div:last-of-type address p{
         color: #FFEBD3; font-weight: normal; font-size: 12px; line-height: 23px; font-style: normal;
-    }
-    footer > div div:last-of-type address p:not(:nth-child(2)){
-        font-family: Tiro Devanagari Sanskrit Regular;
-    }
-    footer > div div:last-of-type address p:nth-child(2){
-        font-family: Noto Sans KR;
     }
     footer > div div:last-of-type address p a{
         color: #FFEBD3;
