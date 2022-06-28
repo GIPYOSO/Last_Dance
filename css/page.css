@@ -3,9 +3,9 @@
     font-family: 'Tiro Devanagari Sanskrit Regular';
 }
 
-.ParcelOut a, .WiseSaying div h2, .loginSection form fieldset p, .joinSection form p, .joinSection form label, .joinSection form select,
+.WeatherSection, .hob, .ParcelOut, .ParcelOut a, .WiseSaying div h2, .loginSection form fieldset p, .joinSection form p, .joinSection form label, .joinSection form select,
 .joinSection form div button:last-of-type, .operationS h2, .operationS ul, .operationS ol, .tableSection h2, .tableSection1 h2, .readpage > div:nth-of-type(2), 
-.readpage1, .calendar .main-date, .calendar .calendar-body tbody tr td{
+.readpage1, .calendar .main-date, .calendar .calendar-body tbody tr td, .writingS{
     font-family: 'Noto Sans KR';
 }
 
@@ -84,7 +84,7 @@
         width: 80%; margin-bottom: -4px;
     }
     .hob{
-        max-width: 1920px; width: 100%; background: url(../images/vage.jpg) no-repeat; text-align: center;
+        max-width: 1920px; width: 100%; background: url(../images/corn.jpg) no-repeat; text-align: center;
         background-size: cover;
     }
     .hob div{
@@ -323,7 +323,7 @@
 
     /*! 운영정보 Page fin */
     .gong{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.png ) no-repeat;
+        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .comubg{
@@ -543,9 +543,52 @@
         color: #fff;
     }
 
+    /*! 공지사항 글 페이지 */
 
-
-
+    .writingS{
+        max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 95px;
+    }
+    .writingS h2{
+        text-indent: -9999px;
+    }
+    .writingS > div:first-of-type{
+        text-align: right; margin-bottom: 20px;
+    }
+    .writingS > div:last-of-type{
+        text-align: right;
+    }
+    .writingS button{
+        border: none; background: #627200; width: 5.9%; height: 40px;
+        font-size: 15px; border-radius: 7px; color: #fff; cursor: pointer;
+    }
+    .writingS button a{
+        color: #fff;
+    }
+    .writingS > div:nth-of-type(2){
+        margin-bottom: 20px; border: 1px solid #627200; padding: 2.083%;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type{
+        border-bottom: 1px solid #627200; margin-bottom: 30px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div{
+        margin-bottom: 15px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div label,
+    .writingS > div:nth-of-type(2) > div:first-of-type label{
+        font-size: 20px; vertical-align: middle;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div select{
+        width: 15.97%; margin-left: 1%; height: 30px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type input{
+        margin-left: 2.35%; height: 30px; width: 76.38%; margin-bottom: 30px;
+        box-sizing: border-box; font-size: 18px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type span{
+     margin-left: 1.5%; color: #a2a2a2;
+    }
+    
+    
 
 
 

@@ -1,7 +1,7 @@
 a{
     text-decoration: none;
 }
-.ColorH, .paging ol li:not(:first-child){
+.NoneColor-Header, .ColorH, .fix, .paging ol li:not(:first-child){
     font-family: 'Noto snas KR';
 }
 footer h1, footer > div div:last-of-type address p:not(:nth-child(2)),

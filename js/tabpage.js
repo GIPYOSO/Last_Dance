@@ -19,13 +19,3 @@ function tabpageJS(tabBtn,tabPg){
         $('#' + $(this).attr('data-tab')).addClass('active')
     });
 }
-
-// $(document).ready(function(){
-//     $('ul.service_move li').click(function(){
-//         $('ul.service_move li').removeClass('active');
-//         $(this).addClass('active');
-
-//         $(tabPg).removeClass('active');
-//         $('#' + $(this).attr('data-tabNamne')).addClass('active')
-//     })
-// })
