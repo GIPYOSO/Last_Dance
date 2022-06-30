@@ -1,14 +1,14 @@
 .MainV > div h2, .WeatherSection h2, .WeatherSection > div h3, .ParcelOut div:last-of-type p mark, .loginSection form fieldset h2,
-.loginSection form fieldset > div input:last-of-type, .joinSection form h2, .calendar .input-data, .calendar .input-box, .calendar .content-right thead{
+.loginSection form fieldset > div input:last-of-type, .joinSection form h2, .MyPageS .calendar .content-left, .calendar .input-data, .calendar .input-box, .calendar .content-right thead tr td,
+#current-year-month, .MyPageS > div > div:nth-of-type(2) h3{
     font-family: 'Tiro Devanagari Sanskrit Regular';
 }
 
 .WeatherSection, .hob, .ParcelOut, .ParcelOut a, .WiseSaying div h2, .loginSection form fieldset p, .joinSection form p, .joinSection form label, .joinSection form select,
 .joinSection form div button:last-of-type, .operationS h2, .operationS ul, .operationS ol, .tableSection, .tableSection h2, .tableSection1 h2, .readpage > div:nth-of-type(2), 
-.readpage1, .calendar .main-date, .calendar .calendar-body tbody tr td, .writingS, .writingS table tr td{
+.readpage1, .calendar .main-date, .calendar .calendar-body tbody tr td, .writingS, .writingS table tr td, .calendar h3, .calendar p, .calendar tr td{
     font-family: 'Noto Sans KR';
 }
-
 
 @media screen and (max-width: 767px) {}
 
@@ -88,17 +88,57 @@
         background-size: cover;
     }
     .hob div{
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.4); position: relative; height: 400px;
     }
-    .hob h2{
-        font-size: 40px; color: #fff; padding: 135px 0 20px 0;
+    .hob div h2{
+        position: absolute;  font-size: 40px; color: #fff; top: 135px; left: 45.05%;
+        animation: hobs1 1.7s ease-in-out;
     }
-    .hob p{
+    .hob div p{
         font-size: 25px; color: #fff; padding-bottom: 135px; line-height: 40px;
+        position: absolute; top: 210px;  left: 27.65%; animation: hobs2 1.s ease-in-out;
     }
+    @keyframes hobs1{
+        from{
+            left: 0;
+            opacity: 0;
+        }to{
+            left: 45.05%;
+            opacity: 1;
+        }
+    }
+    @keyframes hobs2{
+        from{
+            left: 0;
+            opacity: 0;
+        }to{
+            left: 27.65%;
+            opacity: 1;
+        }
+    }
+    @keyframes desappear1 {
+        from{
+            left: 865px;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+    @keyframes desappear2 {
+        from{
+            left: 531px;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+
+
     .ParcelOut{
         max-width: 1920px; width: 100%; background: url(../images/main_D_bg.png) no-repeat;
-        margin: 0 auto; height: 1183px;
+        margin: 0 auto; height: 1183px; overflow-x: hidden;
     }
     .ParcelOut div:first-of-type{
         width: 100%; padding-top: 60px; display: flex; justify-content: center; align-items: center;
@@ -117,15 +157,55 @@
         display: flex; justify-content: center; align-items: center; position: relative;
         margin-bottom: 60px;
     }
-    .ParcelOut div:last-of-type img:first-of-type{
+    .ParcelOut div:last-of-type .parimg1{
         position: absolute; top: -50px; left: 0px; display: block; max-width: 100%;
+        animation: hobs3 2s ease-in-out;
     }
     .ParcelOut div:last-of-type img:nth-of-type(2){
         z-index: 1; width: 40%;
     }
-    .ParcelOut div:last-of-type img:last-of-type{
+    .ParcelOut div:last-of-type .parimg2{
         position: absolute; top: -50px; right: 0; display: block; max-width: 100%;
+        animation: hobs4 2s ease-in-out; 
     }
+
+    @keyframes hobs3{
+        from{
+            left: -100px;
+            opacity: 0;
+        }to{
+            left: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes hobs4{
+        from{
+            right: -100px;
+            opacity: 0;
+        }to{
+            right: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes desappear3 {
+        from{
+            left: 0;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+    @keyframes desappear4 {
+        from{
+            right: 0;
+            opacity: 1;
+        }to{
+            right: -100px;
+            opacity: 0;
+        }
+    }
+
     .ParcelOut div:last-of-type p{
         position: absolute; color: #fff; font-size: 30px; text-align: center; line-height: 45px;
         z-index: 2;
@@ -589,6 +669,15 @@
     }
     /*! Writing Page fin*/
 
+    .mapS{
+        max-width: 1920px; width: 100%;
+    }
+    .mapS .mapslist{
+        width: 20%;
+    }
+    .mapS #map{
+        width: 70%; height: 800px;
+    }
 
 
 
@@ -596,76 +685,127 @@
 
 
 
-
-    .calendar .main{
+    .MyPageS{
+        max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
+        height: 900px; margin-bottom: 95px; padding-top: 95px;
+    }
+    .MyPageS > div{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+        display: flex;
+    }
+    .MyPageS .calendar{
+        width: 67%;
+    }
+    .MyPageS .calendar h3{
+        font-size: 60px; margin-bottom: 60px;
+    }
+    .MyPageS .calendar p{
+        margin-bottom: 15px; font-size: 30px; color: #627200; font-weight: bold;
+    }
+    .MyPageS .calendar .main{
         display: flex; align-items: center; justify-content: center; height: 100vh;
     }
-    .calendar .content-wrap{
-        width: 800px; height: 600px; overflow: hidden; 
+    .MyPageS .calendar .content-wrap{
+        height: 600px; overflow: hidden; 
     }
-    .calendar .content-left{
+    .MyPageS .calendar .content-left{
         background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
         height: 490px; padding: 90px 20px 20px 0;  overflow: auto; 
     }
-    .calendar .Lnext, .calendar .Rnext,
+    .MyPageS .calendar .Lnext, .calendar .Rnext,
     #next, #prev{
         cursor: pointer; color: #FFEBD3;
     }
-    .calendar .main-wrap{
+    .MyPageS .calendar .main-wrap{
         text-align: center; margin: 20px 0 0 0;
     }
-    .calendar .main-day{
+    .MyPageS .calendar .main-day{
         font-size: 30px;
     }
-    .calendar .main-date{
+    .MyPageS .calendar .main-date{
         font-size: 120px; margin: 20px 0; font-weight: bold;
     }
-    .calendar .todo-wrap{
+    .MyPageS .calendar .todo-wrap{
         padding: 0 0 0 40px;
     }
-    .calendar .todo-title{
+    .MyPageS .calendar .todo-title{
         font-size: 20px; margin: 0 0 10px 0;
     }
-    .calendar .input-box{
+    .MyPageS .calendar .input-box{
         width: 70%; height: auto; background: #0b0809; color: #FFEBD3; line-height : normal;
         padding: .8em .5em 0 0; border: 0; border-bottom: 1px dashed #627200;; 
         border-radius: 0; outline-style: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;
     }
-    .calendar .input-data{
+    .MyPageS .calendar .input-data{
         cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0;
         background: #627200; border: none; color: #FFEBD3; border-radius: 10px;
     }
-    .calendar .input-data:hover{
+    .MyPageS .calendar .input-data:hover{
         background: #ffffff; color: #0b0809;
     }
-    .calendar .input-list > div{
+    .MyPageS .calendar .input-list > div{
         font-size: 16px; width: 60%; float: left; color: #FFEBD3;
     }
-    .calendar .del-data{
+    .MyPageS .calendar .del-data{
         display: block; color: #FFEBD3; float: left; width: 10%; cursor: pointer;
         font-size: 10px; padding: 10px; background: #0b0809; border: none; border-radius: 10px;
     }
-    .calendar .content-right{
+    .MyPageS .calendar .content-right{
         float: left; width: 360px; height: 480px; padding: 100px 20px 20px 20px; background: #627200; border-radius: 0 20px 20px 0;
     }
-    .calendar .sun{
+    .MyPageS .calendar .sun{
         color:#ef3333;
     }
-    .calendar .sat{
+    .MyPageS .calendar .sat{
         color:#2107e0;
     }
-    .calendar .content-right table tr td{
+    .MyPageS .calendar .content-right table tr td{
         width: 50px; height: 50px; text-align: center; font-size: 20px; vertical-align: middle;
         cursor: pointer;
     }
-    .calendar .calendar-body tbody tr td{
+    .MyPageS .calendar .calendar-body tbody tr td{
         cursor: pointer; font-weight: bold;
     } 
-    .calendar tr td.active{
+    .MyPageS .calendar tr td.active{
         background: #0b0809; border-radius: 50%; color: #ffffff;
     }
-    .calendar tr td td{
+    .MyPageS .calendar tr td td{
         color: #FFEBD3;
+    }
+    .MyPageS > div > div:nth-of-type(2){
+        position: relative; width: 30%;
+    }
+    .MyPageS > div > div:nth-of-type(2) h3{
+        font-size: 128px; font-style: italic; color: #321800; font-weight: normal;
+        line-height: 170px; position: absolute; top: 200px; right: 130px;
+        animation: slide2 2s ease-in-out;
+    }
+    .MyPageS > div > div:last-of-type{
+        height: 900px; width: 26%; position: absolute; right: 100px; z-index: -1;
+        background:  url(../images/MPbg_2.png) no-repeat; background-size: cover;
+        animation: slide1 2s ease-in-out;
+    }
+    .MyPageS > div > div:last-of-type h3{
+        text-indent: -9999px;
+    }
+
+    @keyframes slide1{
+        from{
+            right: -100px;
+            opacity: 0;
+        }to{
+            right:  100px;
+            opacity: 1;
+        }
+    }
+    @keyframes slide2{
+        from{
+            right: -130px;
+            opacity: 0;
+        }to{
+            right:  130px;
+            opacity: 1;
+        }
     }
 }
 
