@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="css/import.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/weather.js"></script>
 </head>
 <body>
     <header class="NoneColor-Header">
         <h1><a href="index.html"><img src="images/main_Logo.png" alt=""></a></h1>
         <nav>
-            <ul>
+            <button type="button" class="bobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="gnb clear">
                 <li>운영정보
                     <ul>
                         <li><a href="Notification_information.html">질병정보</a></li>
@@ -41,12 +48,7 @@
                 <li><a href="MyPage.html">마이페이지</a></li>
             </ul>
         </nav>
-        <label for="line-wrap" class="mui">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <span><a href="login.html">로그인</a></span>
+        <span class="login"><a href="login.html">로그인</a></span>
     </header>
     
     <section class="fix">

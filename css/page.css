@@ -13,7 +13,806 @@
 @media screen and (max-width: 767px) {}
 
 /* ? mobile */
-@media screen and (min-width: 768px) and (max-width: 1279px) {}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .mainbackground{
+        max-width: 1279px; width: 100%; height: 100vh; position: relative; background-repeat: cover;
+    }
+    .mainbackground video{
+        position: absolute; width: 100%; height: 100vh; object-fit: cover;
+    }
+    .mainbackground .MainV{
+        max-width: 1279px; width: 100%; height: 100vh; position: absolute; z-index: 1;
+        background: rgba(0,0,0,0.6);
+    }
+    .MainV > div{
+        text-align: center; margin-top: 27%; line-height: 100px;
+    }
+    .MainV > div h2{
+        font-size: 60px; font-weight: normal;
+        margin-bottom: 60px;
+    }
+    .MainV > div h2, .MainV > div p, .MainV > div button{
+        color: #fff;
+    }
+    .MainV > div a{
+        background: none; border: 1px solid #fff; padding: 14px 49px; color: #fff;
+    }
+    
+    .WeatherSection{
+        max-width: 1279px; width: 100%; background: url(../images/main_weather_bg.png) no-repeat;
+        text-align: center;
+    }
+    .WeatherSection h2{
+        font-size: 50px; text-align: center; padding-top: 60px; color: 627200; margin-bottom: 70px;
+        font-weight: normal; color: #627200;
+    }
+    .WeatherSection > div{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+    }
+    .WeatherSection > div::after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .WeatherSection > div h3{
+        font-size: 30px; margin-bottom: 20px;
+    }
+    .WeatherSection > div div{
+        width: 20%; float: left;
+    }
+    .WeatherSection > div div title{
+        display: block; font-size: 14px;
+    }
+    .WeatherSection > div div p{
+        font-size: 18px; margin-bottom: 20px;
+    }
+    .WeatherSection > div div ul{
+        width: 100%; float: left; text-align: center;
+    }
+    .WeatherSection > div div ul::after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .WeatherSection > div div ul li{
+        color: black; line-height: 25px; font-size: 14px;
+    }
+    .WeatherSection > div:last-of-type{
+        padding-bottom: 45px;
+    }
+    .WeatherSection > img{
+        width: 80%; margin-bottom: -4px;
+    }
+    .hob{
+        max-width: 1279px; width: 100%; background: url(../images/corn.jpg) no-repeat; text-align: center;
+        background-size: cover;
+    }
+    .hob div{
+        background: rgba(0,0,0,0.4); position: relative; width: 100%; height: 400px;
+    }
+    .hob div h2{
+        position: absolute;  font-size: 30px; color: #fff; top: 135px; left: 45.05%;
+        animation: hobs1 1.7s ease-in-out;
+    }
+    .hob div p{
+        position: absolute; font-size: 18px; color: #fff; line-height: 40px; width: 70%;
+        top: 210px; left: 18.65%; animation: hobs2 1s ease-in-out;
+    }
+    @keyframes hobs1{
+        from{
+            left: 0;
+            opacity: 0;
+        }to{
+            left: 45.05%;
+            opacity: 1;
+        }
+    }
+    @keyframes hobs2{
+        from{
+            left: 0;
+            opacity: 0;
+        }to{
+            left: 18.65%;
+            opacity: 1;
+        }
+    }
+    @keyframes desappear1 {
+        from{
+            left: 45.05%;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+    @keyframes desappear2 {
+        from{
+            left: 18.65%;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+
+
+    .ParcelOut{
+        max-width: 1279px; width: 100%; background: url(../images/main_D_bg.png) no-repeat;
+        margin: 0 auto; height: 1000px; overflow-x: hidden; overflow: hidden;
+    }
+    .ParcelOut div:first-of-type{
+        width: 100%; padding-top: 60px; display: flex; justify-content: center; align-items: center;
+        margin-bottom: 130px;
+    }
+    .ParcelOut div:after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .ParcelOut div span{
+        float: left; border-bottom: 2px solid #627200; width: 6%; display: block;
+    }
+    .ParcelOut div h2{
+        font-size: 50px; color: #627200; float: left; margin: 0 3%;
+    }
+    .ParcelOut div:last-of-type{
+        display: flex; justify-content: center; align-items: center; position: relative;
+        margin-bottom: 60px; 
+    }
+    .ParcelOut div:last-of-type .parimg1{
+        position: absolute; top: -50px; left: 0px; display: block; max-width: 30%;
+        animation: hobs3 2s ease-in-out; z-index: 0;
+    }
+    .ParcelOut div:last-of-type img:nth-of-type(2){
+        z-index: 1; width: 40%;
+    }
+    .ParcelOut div:last-of-type .parimg2{
+        position: absolute; top: -50px; right: 0; display: block; max-width: 30%;
+        animation: hobs4 2s ease-in-out; z-index: 0;
+    }
+
+    @keyframes hobs3{
+        from{
+            left: -100px;
+            opacity: 0;
+        }to{
+            left: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes hobs4{
+        from{
+            right: -100px;
+            opacity: 0;
+        }to{
+            right: 0;
+            opacity: 1;
+        }
+    }
+    @keyframes desappear3 {
+        from{
+            left: 0;
+            opacity: 1;
+        }to{
+            left: -100px;
+            opacity: 0;
+        }
+    }
+    @keyframes desappear4 {
+        from{
+            right: 0;
+            opacity: 1;
+        }to{
+            right: -100px;
+            opacity: 0;
+        }
+    }
+
+    .ParcelOut div:last-of-type p{
+        position: absolute; color: #fff; font-size: 30px; text-align: center; line-height: 45px;
+        z-index: 2;
+    }
+    .ParcelOut div:last-of-type p mark{
+        background: none; color: #fff;
+        font-weight: normal;
+    }
+    .ParcelOut a{
+        display: block; margin: 0 auto; border: 1px solid #627200; color: #627200; z-index: 13;
+        text-align: center; width: 20%; line-height: 50px; font-size: 20px; font-weight: bold;
+    }
+    .WiseSaying{
+        max-width: 1279px; width: 100%; background: url(../images/main_yhp.jpg) no-repeat;
+        background-size: cover; text-align: center;
+    }
+    .WiseSaying div{
+        background: rgba(0,0,0,0.4); padding: 100px 0;
+    }
+    .WiseSaying div h2{
+        font-size: 35px; color: #fff; line-height: 50px;
+    }
+    /*! Main Page fin */
+
+    .loginSection{
+        max-width: 1279px; width: 100%; margin: 0 auto; background: url(../images/VG.jpg) no-repeat; 
+    }
+    .loginSection form{
+        background-color: rgba(0,0,0,0.4); width: 100%; height: 1279px;
+        display: flex; justify-content: center; align-items: center;
+    }
+    .loginSection form fieldset{
+        margin: 0 auto; width: 33%; height: 740px; background: #FFEBD3;
+        border-radius: 20px;
+    }
+    .loginSection form fieldset p{
+        margin: 30px 0 10px; font-size: 30px; color: #627200;
+        text-align: center;
+    }
+    .loginSection form fieldset h2{
+        font-weight: normal; font-size: 30px;
+        color: #627200; margin-bottom: 30px; text-align: center;
+    }
+    .loginSection form fieldset > div{
+        position: absolute; width: 20%; list-style: none; left: 39.8%;
+    }
+    .loginSection form fieldset > div input:first-of-type,
+    .loginSection form fieldset > div input:nth-of-type(2){
+        width: 100%; height: 50px; border-radius: 5px; box-sizing: border-box; box-shadow: 7px 7px 4px rgb(0 0 0 / 25%);
+        border: 1px solid #627200; margin-bottom: 10px; display: block; font-size: 20px;
+    }
+    .loginSection form fieldset > div input:nth-of-type(3){
+        margin-bottom: 30px;
+    }
+    .loginSection form fieldset > div label{
+        vertical-align: none;
+    }
+    .loginSection form fieldset > div input:last-of-type{
+        display: block; width: 100%; height: 45px; color: #fff;
+        font-size: 30px; background-color: #627200; border: none; cursor: pointer; margin-bottom: 75px;
+    }
+    .loginSection form fieldset > div ul li button{
+        width: 100%; line-height: 50px; background: #fff; text-align: center; font-size: 25px;
+        border: none; cursor: pointer;
+    } 
+    .loginSection form fieldset > div ul li:first-child button{
+        border: 1px solid #628EFF; margin-bottom: 10px; color: #628EFF;
+    }
+    .loginSection form fieldset > div ul li:nth-child(2) button{
+        border: 1px solid #00C63B; margin-bottom: 10px; color: #00C63B;
+    }
+    .loginSection form fieldset > div ul li:last-child button{
+        border: 1px solid #FAE100; color: #FAE100; margin-bottom: 65px;
+    }
+    .loginSection form fieldset > div div{
+        text-align: center;
+    }
+    .loginSection form fieldset > div div a{
+        color: #627200; font-size: 15px;
+    }
+    .loginSection form fieldset > div div a:not(:first-of-type){
+        margin-left: 10px; border-left: 1px solid #627200; padding-left: 10px;
+    }
+    /*! Login Page fin */
+    
+    .joinSection{
+        max-width: 1920px; width: 100%; display: flex; justify-content: center; align-items: center;
+        margin: 0 auto;
+    }
+    .joinSection form{
+        width: 26%; margin: 75px 0 95px;
+    }
+    .joinSection form p{
+        font-size: 30px; text-align: center; margin-bottom: 20px;
+    }
+    .joinSection form h2{
+        font-size: 30px; text-align: center; margin-bottom: 60px; font-weight: normal;
+    }
+    .joinSection form label{
+        display: block; font-size: 25px; margin-bottom: 5px;
+    }
+    .joinSection form input{
+        margin-bottom: 10px; width: 100%; background: rgb(226, 226, 226); border: none; height: 40px;
+        box-sizing: border-box; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    }
+    .joinSection form input:first-of-type,
+    .joinSection form input:nth-of-type(6){
+        width: 75%;
+    }
+    .joinSection form button:first-of-type{
+        border: none; width: 25%; background: #627200; line-height: 38px; vertical-align: middle;
+        color: #fff; margin-left: -6px; cursor: pointer; font-size: 16px; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    }
+    .joinSection form select{
+        margin-left: -6px; width: 25%; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%); height: 40px; vertical-align: middle;
+        border: 2px solid #627200;
+    }
+    .joinSection form input:last-of-type{
+        margin-bottom: 60px;
+    }
+    .joinSection form div{
+        text-align: center;
+    }
+    .joinSection form div button:last-of-type{
+        border: none; width: 30%; background: #627200; line-height: 45px;
+        color: #fff; cursor: pointer; font-size: 20px; border-radius: 5px; 
+    }
+    /*! 회원가입 fin */
+    
+    .opin_bg{
+        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 410px;
+        text-indent: -9999px; margin-bottom: 95px;
+    }
+    .operationS{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+    }
+    [id ^='OStab']{
+        display: none;
+    }
+    [id ^='OStab'].active{
+        display: block;
+    }
+    .operationS h2{
+        font-size: 60px; margin-bottom: 60px;
+    }
+    .operationS > p{
+        font-size: 40px; margin-bottom: 10px;
+    }
+    .accordionContainer > li{
+       cursor: pointer; position: relative;
+    }
+    .accordionContainer > li div:first-child{
+        padding: 30px 0; color: black; font-size: 25px; border-top: 1px solid #627200;
+    }
+    .accordionContainer > li div:first-of-type span{
+        position: absolute; right: 2%; top: 25px; font-size: 30px;
+        transition: all 1s ease-in-out;
+    }
+    .accordionContainer > li:last-child{
+        border-bottom: 1px solid #627200; margin-bottom: 95px;
+    }
+    .accordionContainer > li.active span{
+        transform: rotate(-180deg);
+    }
+
+    .accordionContainer > li.active > div:last-child{
+        display: block; background-color: #627200;
+    }
+    .accordionContainer > li > div:last-child{
+        display: none;
+    }
+    .accordionContainer > li > div:last-child p{
+        padding: 10px 2%; color: #FFEBD3; font-size: 18px; line-height: 30px;
+    }
+    .accordionContainer > li > div:last-child mark{
+        background: none; font-weight: bold; font-style: normal;
+        font-size: 30px; padding: 10px 2%;
+    }
+    .accordionContainer > li p mark{
+        background: none; font-weight: bold; font-style: normal;
+    }
+    .accordionContainer > li > div:last-child ol{
+        color: #FFEBD3; font-weight: bold; font-size: 20px;
+        padding: 10px 2%;
+    }
+    .accordionContainer > li > div:last-child ol > li{
+        margin-bottom: 10px;
+    }
+    .accordionContainer > li > div:last-child ol > li > p{
+        font-size: 16px; font-weight: normal; line-height: 25px;
+    }
+    .accordionContainer > li > div:last-child ol > li > ul li p{
+        line-height: 20px;
+    }
+
+    /*! 운영정보 Page fin */
+    .gong{
+        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.jpg ) no-repeat;
+        background-size: cover; text-indent: -9999px; margin-bottom: 95px;
+    }
+    .comubg{
+        max-width: 1920px; width: 100%; height: 410px; background: url(../images/comuBG.jpg ) no-repeat;
+        background-size: cover; text-indent: -9999px; margin-bottom: 95px;
+    }
+    .tableSection,
+    .tableSection1{
+        max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 80px;
+    }
+    .tableSection h2,
+    .tableSection1 h2{
+        font-size: 60px; margin-bottom: 60px
+    }
+    [class ^= 'inventory']{
+        display: none;
+    }
+    [class ^= 'inventory'].active{
+        display: block; margin-bottom: 10px;
+    }
+    .tableSection table,
+    .tableSection1 table{
+        width: 100%;
+    }
+    .tableSection table tbody tr span{
+        font-size: 13px; background: #FFC2C2; color: #FE0000; 
+        width: 55px; line-height: 25px; position: absolute; padding: 0 5px;
+    }
+    .tableSection table tbody tr th:first-child{
+        width: 68%;
+    }
+    .tableSection table tbody tr th:not(:first-child){
+        width: 11%;
+    }
+    .tableSection table tbody tr th,
+    .tableSection1 table tbody tr th{
+        font-size: 32px; font-weight: bold; line-height: 96px;
+    }
+    .tableSection table tbody tr:first-child,
+    .tableSection1 table tbody tr:first-child{
+        border-top: 2px solid #627200;
+    }
+    .tableSection table tbody tr:nth-child(2),
+    .tableSection1 table tbody tr:nth-child(2){
+        background: rgb(248, 255, 205);
+    }
+    .tableSection table tbody tr:nth-child(2) td mark,
+    .tableSection1 table tbody tr:nth-child(2) td mark{
+        background: none; font-style: normal; color: red;
+    }
+    .tableSection table tbody tr,
+    .tableSection1 table tbody tr{
+        border-bottom: 1px solid #627200;
+    }
+    .tableSection table tbody tr td,
+    .tableSection1 table tbody tr td{
+       line-height: 76px; font-size: 20px; font-weight: normal;
+    }
+    .tableSection table tbody tr td:not(:first-of-type),
+    .tableSection1 table tbody tr td:not(:first-of-type){
+        text-align: center;
+    }
+    .tableSection table tbody tr td a,
+    .tableSection1 table tbody tr td a{
+        color: #000;  padding: 0 1%; font-weight: normal;
+    }
+    .tableSection > div:last-child{
+        text-align: right;
+    }
+    .tableSection > div:last-child button{
+        width: 4.86%; background: rgb(98,114,0); color: #fff; font-size: 15px; line-height: 30px;
+        border: none; border-radius: 7px; cursor: pointer;
+    }
+
+    /*! 자유게시판, 공지사항 fin */
+    
+    .readpage, .readpage1{
+        max-width: 1100px; width: 100%; margin: 0 auto;
+    }
+    .readpage h2, .readpage1 h2{
+        text-indent: -9999px;
+    }
+    .readpage > div:first-of-type,
+    .readpage1 > div:first-of-type{
+        text-align: right; margin-bottom: 20px;
+    }
+    .readpage > div:first-of-type button:first-child,
+    .readpage1 > div:first-of-type button:first-child{
+        width: 5.9%;
+    }
+    .readpage > div:first-of-type button,
+    .readpage1 > div:first-of-type button{
+        background: #627200; border: none; color: #fff; width: 8%; height: 40px;
+        border-radius: 7px;
+    }
+    .readpage > div:first-of-type button:not(:first-child),
+    .readpage1 > div:first-of-type button:not(:first-child){
+        margin-left: 0.3%;
+    }
+    .readpage > div:first-of-type button a,
+    .readpage1 > div:first-of-type button a{
+        font-size: 15px; color: #fff;
+    }
+    .readpage button span,
+    .readpage1 button span{
+        font-size: 16px; padding-right: 10%;
+    }
+    .readpage > div:nth-of-type(2){
+        border: 1px solid #627200; padding: 2%; box-sizing: border-box;
+        margin-bottom: 65px;
+    }
+    .readpage1 > div:nth-of-type(2){
+        border: 1px solid #627200; padding: 2%; box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type{
+        border-bottom: 2px solid #627200; margin-bottom: 30px;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type a,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type a{
+        color: #627200; font-weight: bold;
+        font-size: 20px; margin-bottom: 15px; display: block;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type h3{
+        color: #FE0000; font-size: 20px; margin-bottom: 15px;
+    }
+    .readpage1 > div:nth-of-type(2) > div:first-of-type h3{
+        font-size: 20px; margin-bottom: 15px;
+    }
+    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 mark{
+        font-size: 16px; background: none; font-style: normal; font-weight: normal;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type h3 span,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 span{
+        display: inline-block; background: #FFC2C2; width: 4%; text-align: center;
+        font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type p,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type p{
+        font-size: 15px; color: black;
+    }
+    .readpage > div:nth-of-type(2) > div:first-of-type time,
+    .readpage1 > div:nth-of-type(2) > div:first-of-type time{
+        display: block; font-size: 13px; color: #adadad; margin-bottom: 25px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
+        display: block; background: none; font-style: normal; font-size: 15px; color: #FE0000;
+        margin-bottom: 40px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) h3{
+        text-align: center; font-size: 36px; margin-bottom: 65px;
+    }
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p mark{
+        background: none; color: #FE0000; font-style: normal;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p,
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+        font-size: 20px; font-weight: bold;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){
+        margin-bottom: 0;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:not(:nth-of-type(6)){
+        margin-bottom: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol{
+        margin-left: 3.26%; margin-bottom: 50px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol li{
+        font-size: 16px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type ol li:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(7){
+        margin-bottom: 0;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(8){
+        margin-bottom: 95px; font-size: 16px; font-weight: normal;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2){
+        margin-bottom: 95px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type){
+        text-align: center;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type) p{
+        line-height: 30px; font-size: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:not(:first-of-type) p:nth-child(3){
+        font-size: 24px; color: #FE0000;
+    }
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) h3{
+        font-size: 36px; margin-bottom: 40px;
+    }
+    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p{
+        font-size: 15px; line-height: 40px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type p:last-of-type{
+        margin-bottom: 20px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type ol li{
+        font-size: 20px; line-height: 30px;
+    }
+    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:last-of-type ol li{
+        margin-bottom: 40px;
+    }
+    .readpage1 > div:nth-of-type(3){
+        text-align: right; margin-bottom: 60px;
+    }
+    .readpage1 > div:nth-of-type(3) button{
+        border: none; background: #627200; width: 7.72%; height: 40px;
+        font-size: 15px; border-radius: 7px; color: #fff;
+    }
+    .readpage1 > div:nth-of-type(3) button a{
+        color: #fff;
+    }
+
+    /*! 공지사항 글 페이지 */
+
+    .writingS{
+        max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 95px;
+    }
+    .writingS h2{
+        text-indent: -9999px;
+    }
+    .writingS > div:first-of-type{
+        text-align: right; margin-bottom: 20px;
+    }
+    .writingS > div:last-of-type{
+        text-align: right;
+    }
+    .writingS button{
+        border: none; background: #627200; width: 5.9%; height: 40px;
+        font-size: 15px; border-radius: 7px; color: #fff; cursor: pointer;
+    }
+    .writingS button a{
+        color: #fff;
+    }
+    .writingS > div:nth-of-type(2){
+        margin-bottom: 20px; border: 1px solid #627200; padding: 2.083%;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type{
+        border-bottom: 1px solid #627200; margin-bottom: 30px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div{
+        margin-bottom: 15px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div label,
+    .writingS > div:nth-of-type(2) > div:first-of-type label{
+        font-size: 20px; vertical-align: middle;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type div select{
+        width: 15.97%; margin-left: 1%; height: 30px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type input{
+        margin-left: 2.35%; height: 30px; width: 76.38%; margin-bottom: 30px;
+        box-sizing: border-box; font-size: 18px;
+    }
+    .writingS > div:nth-of-type(2) > div:first-of-type span{
+     margin-left: 1.5%; color: #a2a2a2;
+    }
+    /*! Writing Page fin*/
+
+    .mapS{
+        max-width: 1920px; width: 100%; margin-bottom: 95px;
+    }
+    .mapS::after{
+        display: block; content: ''; visibility: hidden; clear: both;
+    }
+    .mapS .mapslist{
+        width: 30%; height: 800px; float: left; overflow-y: scroll; background: #F8FFCD;
+    }
+    .mapS .mapslist > div{
+        background: #d1d1d1; width: 95%; height: 300px; margin: 5px 2.5%;
+    }
+    .mapS .mapbox{
+        width: 70%; height: 800px; float: left;    
+    }
+    .mapbox > div > div:nth-of-type(5){
+        left: 1210px;
+    }
+    .mapbox > div > div:nth-of-type(6){
+        left: 1280px;
+    }
+
+    /* ! map sale_list page fin */
+
+
+    .MyPageS{
+        max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
+        height: 900px; margin-bottom: 95px; padding-top: 95px;
+    }
+    .MyPageS > div{
+        max-width: 1440px; width: 100%; margin: 0 auto;
+        display: flex;
+    }
+    .MyPageS .calendar{
+        width: 67%;
+    }
+    .MyPageS .calendar h3{
+        font-size: 60px; margin-bottom: 60px;
+    }
+    .MyPageS .calendar p{
+        margin-bottom: 15px; font-size: 30px; color: #627200; font-weight: bold;
+    }
+    .MyPageS .calendar .main{
+        display: flex; align-items: center; justify-content: center; height: 100vh;
+    }
+    .MyPageS .calendar .content-wrap{
+        height: 600px; overflow: hidden; 
+    }
+    .MyPageS .calendar .content-left{
+        background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
+        height: 490px; padding: 90px 20px 20px 0;  overflow: auto; 
+    }
+    .MyPageS .calendar .Lnext, .calendar .Rnext,
+    #next, #prev{
+        cursor: pointer; color: #FFEBD3;
+    }
+    .MyPageS .calendar .main-wrap{
+        text-align: center; margin: 20px 0 0 0;
+    }
+    .MyPageS .calendar .main-day{
+        font-size: 30px;
+    }
+    .MyPageS .calendar .main-date{
+        font-size: 120px; margin: 20px 0; font-weight: bold;
+    }
+    .MyPageS .calendar .todo-wrap{
+        padding: 0 0 0 40px;
+    }
+    .MyPageS .calendar .todo-title{
+        font-size: 20px; margin: 0 0 10px 0;
+    }
+    .MyPageS .calendar .input-box{
+        width: 70%; height: auto; background: #0b0809; color: #FFEBD3; line-height : normal;
+        padding: .8em .5em 0 0; border: 0; border-bottom: 1px dashed #627200;; 
+        border-radius: 0; outline-style: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+    }
+    .MyPageS .calendar .input-data{
+        cursor: pointer; font-size: 10px; padding: 10px; margin: 20px 0 30px 0;
+        background: #627200; border: none; color: #FFEBD3; border-radius: 10px;
+    }
+    .MyPageS .calendar .input-data:hover{
+        background: #ffffff; color: #0b0809;
+    }
+    .MyPageS .calendar .input-list > div{
+        font-size: 16px; width: 60%; float: left; color: #FFEBD3;
+    }
+    .MyPageS .calendar .del-data{
+        display: block; color: #FFEBD3; float: left; width: 10%; cursor: pointer;
+        font-size: 10px; padding: 10px; background: #0b0809; border: none; border-radius: 10px;
+    }
+    .MyPageS .calendar .content-right{
+        float: left; width: 360px; height: 480px; padding: 100px 20px 20px 20px; background: #627200; border-radius: 0 20px 20px 0;
+    }
+    .MyPageS .calendar .sun{
+        color:#ef3333;
+    }
+    .MyPageS .calendar .sat{
+        color:#2107e0;
+    }
+    .MyPageS .calendar .content-right table tr td{
+        width: 50px; height: 50px; text-align: center; font-size: 20px; vertical-align: middle;
+        cursor: pointer;
+    }
+    .MyPageS .calendar .calendar-body tbody tr td{
+        cursor: pointer; font-weight: bold;
+    } 
+    .MyPageS .calendar tr td.active{
+        background: #0b0809; border-radius: 50%; color: #ffffff;
+    }
+    .MyPageS .calendar tr td td{
+        color: #FFEBD3;
+    }
+    .MyPageS > div > div:nth-of-type(2){
+        position: relative; width: 30%;
+    }
+    .MyPageS > div > div:nth-of-type(2) h3{
+        font-size: 128px; font-style: italic; color: #321800; font-weight: normal;
+        line-height: 170px; position: absolute; top: 200px; right: 130px;
+        animation: slide2 2s ease-in-out;
+    }
+    .MyPageS > div > div:last-of-type{
+        height: 900px; width: 26%; position: absolute; right: 100px; z-index: -1;
+        background:  url(../images/MPbg_2.png) no-repeat; background-size: cover;
+        animation: slide1 2s ease-in-out;
+    }
+    .MyPageS > div > div:last-of-type h3{
+        text-indent: -9999px;
+    }
+
+    @keyframes slide1{
+        from{
+            right: -100px;
+            opacity: 0;
+        }to{
+            right:  100px;
+            opacity: 1;
+        }
+    }
+    @keyframes slide2{
+        from{
+            right: -130px;
+            opacity: 0;
+        }to{
+            right:  130px;
+            opacity: 1;
+        }
+    }
+}
 
 /* ? tablet*/
 
@@ -95,7 +894,7 @@
         animation: hobs1 1.7s ease-in-out;
     }
     .hob div p{
-        font-size: 25px; color: #fff; padding-bottom: 135px; line-height: 40px;
+        font-size: 25px; color: #fff; line-height: 40px; width: 45%;
         position: absolute; top: 210px;  left: 27.65%; animation: hobs2 1.s ease-in-out;
     }
     @keyframes hobs1{
@@ -216,7 +1015,7 @@
     }
     .ParcelOut a{
         display: block; margin: 0 auto; border: 1px solid #627200; color: #627200;
-        text-align: center; width: 7.8%; line-height: 50px; font-size: 20px; font-weight: bold;
+        text-align: center; width: 20%; line-height: 50px; font-size: 20px; font-weight: bold;
     }
     .WiseSaying{
         max-width: 1920px; width: 100%; background: url(../images/main_yhp.jpg) no-repeat;
@@ -670,19 +1469,28 @@
     /*! Writing Page fin*/
 
     .mapS{
-        max-width: 1920px; width: 100%;
+        max-width: 1920px; width: 100%; margin-bottom: 95px;
+    }
+    .mapS::after{
+        display: block; content: ''; visibility: hidden; clear: both;
     }
     .mapS .mapslist{
-        width: 20%;
+        width: 30%; height: 800px; float: left; overflow-y: scroll; background: #F8FFCD;
     }
-    .mapS #map{
-        width: 70%; height: 800px;
+    .mapS .mapslist > div{
+        background: #d1d1d1; width: 95%; height: 300px; margin: 5px 2.5%;
+    }
+    .mapS .mapbox{
+        width: 70%; height: 800px; float: left;    
+    }
+    .mapbox > div > div:nth-of-type(5){
+        left: 1210px;
+    }
+    .mapbox > div > div:nth-of-type(6){
+        left: 1280px;
     }
 
-
-
-
-
+    /* ! map sale_list page fin */
 
 
     .MyPageS{

@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="css/import.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/popup.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/tabpage.js"></script>
 </head>
 <body>
     <header class="ColorH">
         <h1><a href="index.html"><img src="images/Color_Logo.png" alt=""></a></h1>
         <nav>
-            <ul>
+            <button type="button" class="bobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="gnb clear">
                 <li>운영정보
                     <ul>
                         <li><a href="Notification_information.html">질병정보</a></li>
@@ -42,12 +48,7 @@
                 <li><a href="MyPage.html">마이페이지</a></li>
             </ul>
         </nav>
-        <label for="line-wrap" class="mui">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <span><a href="login.html">로그인</a></span>
+        <span class="login"><a href="login.html">로그인</a></span>
     </header>
 
     <div class="comubg">comuBG</div>

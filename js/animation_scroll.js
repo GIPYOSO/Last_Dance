@@ -7,7 +7,7 @@ window.addEventListener('scroll',function(){
     let value = window.scrollY;
     console.log("scrollY", value);
    
-    if(value > 1250 && value < 2000){
+    if(value > 1000 && value < 2000){
         mainText1.style.animation="hobs1 1.7s ease-in-out";
         mainText2.style.animation="hobs2 1.7s ease-in-out";
     }else{
@@ -15,7 +15,7 @@ window.addEventListener('scroll',function(){
         mainText2.style.animation="desappear2 1.7s ease-in-out forwards";
     }
     
-    if((value > 2050) && (value < 2879)){
+    if((value > 1800) && (value < 2800)){
         mainText3.style.animation="hobs3 2s ease-in-out";
         mainText4.style.animation="hobs4 2s ease-in-out";
     }else{

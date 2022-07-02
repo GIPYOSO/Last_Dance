@@ -10,12 +10,19 @@
 	<script type="text/javascript" src="js/lib/jindo_component.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/service/SE2M_Configuration.js" charset="utf-8"></script>	<!-- 설정 파일 -->
 	<script type="text/javascript" src="js/service/SE2BasicCreator.js" charset="utf-8"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
     <header class="ColorH">
         <h1><a href="index.html"><img src="images/Color_Logo.png" alt=""></a></h1>
         <nav>
-            <ul>
+            <button type="button" class="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="gnb clear">
                 <li>운영정보
                     <ul>
                         <li><a href="Notification_information.html">질병정보</a></li>
@@ -43,12 +50,7 @@
                 <li><a href="MyPage.html">마이페이지</a></li>
             </ul>
         </nav>
-        <label for="line-wrap" class="mui">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <span><a href="login.html">로그인</a></span>
+        <span class="login"><a href="login.html">로그인</a></span>
     </header>
     
     <div class="gong">gong</div>
