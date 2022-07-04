@@ -694,11 +694,11 @@
         height: 900px; margin-bottom: 95px; padding-top: 95px;
     }
     .MyPageS > div{
-        max-width: 1440px; width: 100%; margin: 0 auto;
+        max-width: 768px; width: 100%; margin: 0 auto;
         display: flex;
     }
     .MyPageS .calendar{
-        width: 100%;
+        width: 95%; margin-left: 3.5%;
     }
     .MyPageS .calendar h3{
         font-size: 60px; margin-bottom: 60px;
@@ -716,7 +716,7 @@
         display: block; content: ''; visibility: hidden; clear: both;
     }
     .MyPageS .calendar .content-left{
-        background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
+        background: #0b0809; color:#FFEBD3; float: left; width: 320px; border-radius: 20px 0 0 20px;
         height: 490px; padding: 90px 20px 20px 0;  overflow: auto; 
     }
     .MyPageS .calendar .Lnext, .calendar .Rnext,
@@ -758,7 +758,7 @@
         font-size: 10px; padding: 10px; background: #0b0809; border: none; border-radius: 10px;
     }
     .MyPageS .calendar .content-right{
-        float: left; width: 360px; height: 480px; padding: 100px 20px 20px 20px; background: #627200; border-radius: 0 20px 20px 0;
+        float: left; width: 320px; height: 480px; padding: 100px 20px 20px 20px; background: #627200; border-radius: 0 20px 20px 0;
     }
     .MyPageS .calendar .sun{
         color:#ef3333;
@@ -1579,7 +1579,7 @@
         animation: slide2 2s ease-in-out;
     }
     .MyPageS > div > div:last-of-type{
-        height: 900px; width: 26%; position: absolute; right: 100px; z-index: -1;
+        height: 790px; width: 450px; position: absolute; right: 100px; z-index: -1;
         background:  url(../images/MPbg_2.png) no-repeat; background-size: cover;
         animation: slide1 2s ease-in-out;
     }
