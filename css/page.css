@@ -698,7 +698,7 @@
         display: flex;
     }
     .MyPageS .calendar{
-        width: 67%;
+        width: 100%;
     }
     .MyPageS .calendar h3{
         font-size: 60px; margin-bottom: 60px;
@@ -711,6 +711,9 @@
     }
     .MyPageS .calendar .content-wrap{
         height: 600px; overflow: hidden; 
+    }
+    .MyPageS .calendar .content-wrap::after{
+        display: block; content: ''; visibility: hidden; clear: both;
     }
     .MyPageS .calendar .content-left{
         background: #0b0809; color:#FFEBD3; float: left; width: 360px; border-radius: 20px 0 0 20px;
@@ -776,21 +779,9 @@
     .MyPageS .calendar tr td td{
         color: #FFEBD3;
     }
-    .MyPageS > div > div:nth-of-type(2){
-        position: relative; width: 30%;
-    }
-    .MyPageS > div > div:nth-of-type(2) h3{
-        font-size: 128px; font-style: italic; color: #321800; font-weight: normal;
-        line-height: 170px; position: absolute; top: 200px; right: 130px;
-        animation: slide2 2s ease-in-out;
-    }
+    .MyPageS > div > div:nth-of-type(2),
     .MyPageS > div > div:last-of-type{
-        height: 900px; width: 26%; position: absolute; right: 100px; z-index: -1;
-        background:  url(../images/MPbg_2.png) no-repeat; background-size: cover;
-        animation: slide1 2s ease-in-out;
-    }
-    .MyPageS > div > div:last-of-type h3{
-        text-indent: -9999px;
+        display: none;
     }
 
     @keyframes slide1{
