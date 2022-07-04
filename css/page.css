@@ -690,6 +690,9 @@
         max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
         height: 900px; margin-bottom: 95px; padding-top: 95px;
     }
+    .MyPageS h2{
+        text-indent: -9999px;
+    }
     .MyPageS > div{
         max-width: 768px; width: 100%; margin: 0 auto;
         display: flex;
@@ -1489,6 +1492,9 @@
         max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
         height: 900px; margin-bottom: 95px; padding-top: 95px;
     }
+    .MyPageS h2{
+        text-indent: -9999px;
+    }
     .MyPageS > div{
         max-width: 768px; width: 100%; margin: 0 auto;
         display: flex;
@@ -2282,6 +2288,9 @@
     .MyPageS{
         max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
         height: 900px; margin-bottom: 95px; padding-top: 95px;
+    }
+    .MyPageS h2{
+        text-indent: -9999px;
     }
     .MyPageS > div{
         max-width: 1440px; width: 100%; margin: 0 auto;
