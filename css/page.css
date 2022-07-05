@@ -467,7 +467,7 @@
         text-align: right;
     }
     .tableSection > div:last-child button{
-        width: 21%; background: rgb(98,114,0); color: #fff; font-size: 12px; line-height: 30px;
+        width: 16%; background: rgb(98,114,0); color: #fff; font-size: 12px; line-height: 30px;
         border: none; border-radius: 7px; cursor: pointer;
     }
 
