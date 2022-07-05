@@ -5,7 +5,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 699px) {
     .mainbackground{
         max-width: 767px; width: 100%; height: 100vh; position: relative; background-repeat: cover;
     }
@@ -17,17 +17,17 @@
         background: rgba(0,0,0,0.6);
     }
     .MainV > div{
-        text-align: center; margin-top: 50%; line-height: 100px;
+        text-align: center; margin-top: 50%; line-height: 50px;
     }
     .MainV > div h2{
-        font-size: 40px; font-weight: normal;
-        margin-bottom: 30px;
+        font-size: 20px; font-weight: normal;
+        margin-bottom: 20px;
     }
     .MainV > div h2, .MainV > div p, .MainV > div button{
         color: #fff;
     }
     .MainV > div a{
-        background: none; border: 1px solid #fff; padding: 14px 49px; color: #fff;
+        background: none; border: 1px solid #fff; padding: 10px 20px; color: #fff;
     }
     
     .WeatherSection{
@@ -807,23 +807,23 @@
 /* ? mobile */
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 700px) and (max-width: 1279px) {
     .mainbackground{
-        max-width: 1279px; width: 100%; height: 100vh; position: relative; background-repeat: cover;
+        max-width: 1278px; width: 100%; height: 700px; position: relative; background-repeat: cover;
     }
     .mainbackground video{
-        position: absolute; width: 100%; height: 100vh; object-fit: cover;
+        position: absolute; width: 100%; height: 700px; object-fit: cover;
     }
     .mainbackground .MainV{
-        max-width: 1279px; width: 100%; height: 100vh; position: absolute; z-index: 1;
+        max-width: 1278px; width: 100%; height: 700px; position: absolute; z-index: 1;
         background: rgba(0,0,0,0.6);
     }
     .MainV > div{
-        text-align: center; margin-top: 27%; line-height: 100px;
+        text-align: center; margin-top: 20%; line-height: 80px;
     }
     .MainV > div h2{
-        font-size: 60px; font-weight: normal;
-        margin-bottom: 60px;
+        font-size: 50px; font-weight: normal;
+        margin-bottom: 40px;
     }
     .MainV > div h2, .MainV > div p, .MainV > div button{
         color: #fff;
