@@ -223,23 +223,23 @@
         max-width: 1279px; width: 100%; margin: 0 auto; background: url(../images/VG.jpg) no-repeat; 
     }
     .loginSection form{
-        background-color: rgba(0,0,0,0.4); width: 100%; height: 1279px;
+        background-color: rgba(0,0,0,0.4); width: 100%; height: 1079px;
         display: flex; justify-content: center; align-items: center;
     }
     .loginSection form fieldset{
-        margin: 0 auto; width: 65%; height: 740px; background: #FFEBD3;
+        margin: 0 auto; width: 97%; height: 640px; background: #FFEBD3;
         border-radius: 20px;
     }
     .loginSection form fieldset p{
-        margin: 30px 0 10px; font-size: 30px; color: #627200;
+        margin: 30px 0 10px; font-size: 25px; color: #627200;
         text-align: center;
     }
     .loginSection form fieldset h2{
-        font-weight: normal; font-size: 30px;
+        font-weight: normal; font-size: 20px;
         color: #627200; margin-bottom: 30px; text-align: center;
     }
     .loginSection form fieldset > div{
-        position: absolute; width: 47%; list-style: none; left: 26.8%;
+        position: absolute; width: 74%; list-style: none; left: 12.8%;
     }
     .loginSection form fieldset > div input:first-of-type,
     .loginSection form fieldset > div input:nth-of-type(2){
@@ -254,10 +254,10 @@
     }
     .loginSection form fieldset > div input:last-of-type{
         display: block; width: 100%; height: 45px; color: #fff;
-        font-size: 30px; background-color: #627200; border: none; cursor: pointer; margin-bottom: 75px;
+        font-size: 20px; background-color: #627200; border: none; cursor: pointer; margin-bottom: 40px;
     }
     .loginSection form fieldset > div ul li button{
-        width: 100%; line-height: 50px; background: #fff; text-align: center; font-size: 25px;
+        width: 100%; line-height: 35px; background: #fff; text-align: center; font-size: 14px;
         border: none; cursor: pointer;
     } 
     .loginSection form fieldset > div ul li:first-child button{
@@ -273,7 +273,7 @@
         text-align: center;
     }
     .loginSection form fieldset > div div a{
-        color: #627200; font-size: 15px;
+        color: #627200; font-size: 10px;
     }
     .loginSection form fieldset > div div a:not(:first-of-type){
         margin-left: 10px; border-left: 1px solid #627200; padding-left: 10px;
