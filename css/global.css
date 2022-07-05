@@ -131,7 +131,7 @@ body{
         list-style: none; text-align: center;
     }
     .paging ol li{
-        display: inline-block; border: 1px solid #fff; padding: 16px 25px;
+        display: inline-block; border: 1px solid #fff; padding: 5px 13px;
         transition-duration: 0.5s; cursor: pointer; line-height: 25px; border-radius: 50%;
     }
     .paging ol li.active{

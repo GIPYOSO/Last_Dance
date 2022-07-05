@@ -325,11 +325,11 @@
     /*! 회원가입 fin */
     
     .opin_bg{
-        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 410px;
+        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 60px;
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 679px; width: 100%; margin: 0 auto;
+        max-width: 699px; width: 100%; margin: 0 auto;
     }
     [id ^='OStab']{
         display: none;
@@ -338,19 +338,19 @@
         display: block;
     }
     .operationS h2{
-        font-size: 60px; margin-bottom: 60px;
+        font-size: 30px; margin-bottom: 60px;
     }
     .operationS > p{
-        font-size: 40px; margin-bottom: 10px;
+        font-size: 20px; margin-bottom: 10px;
     }
     .accordionContainer > li{
        cursor: pointer; position: relative;
     }
     .accordionContainer > li div:first-child{
-        padding: 30px 0; color: black; font-size: 25px; border-top: 1px solid #627200;
+        padding: 20px 30px 20px 0; color: black; font-size: 16px; border-top: 1px solid #627200;
     }
     .accordionContainer > li div:first-of-type span{
-        position: absolute; right: 2%; top: 25px; font-size: 30px;
+        position: absolute; right: 2%; top: 22px; font-size: 16px; vertical-align: middle;
         transition: all 1s ease-in-out;
     }
     .accordionContainer > li:last-child{
@@ -367,24 +367,24 @@
         display: none;
     }
     .accordionContainer > li > div:last-child p{
-        padding: 10px 2%; color: #FFEBD3; font-size: 18px; line-height: 30px;
+        padding: 10px 2%; color: #FFEBD3; font-size: 16px; line-height: 30px;
     }
     .accordionContainer > li > div:last-child mark{
-        background: none; font-weight: bold; font-style: normal;
-        font-size: 30px; padding: 10px 2%;
+        background: none; font-weight: nomal; font-style: normal;
+        font-size: 15px; padding: 10px 2%;
     }
     .accordionContainer > li p mark{
-        background: none; font-weight: bold; font-style: normal;
+        background: none; font-weight: nomal; font-style: normal;
     }
     .accordionContainer > li > div:last-child ol{
-        color: #FFEBD3; font-weight: bold; font-size: 20px;
+        color: #FFEBD3; font-weight: 500; font-size: 16px;
         padding: 10px 2%;
     }
     .accordionContainer > li > div:last-child ol > li{
         margin-bottom: 10px;
     }
     .accordionContainer > li > div:last-child ol > li > p{
-        font-size: 16px; font-weight: normal; line-height: 25px;
+        font-size: 13px; font-weight: normal; line-height: 20px;
     }
     .accordionContainer > li > div:last-child ol > li > ul li p{
         line-height: 20px;
@@ -396,7 +396,7 @@
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .comubg{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/comuBG.jpg ) no-repeat;
+        max-width: 1920px; width: 100%; height: 60px; background: url(../images/comuBG.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .tableSection,
@@ -405,7 +405,7 @@
     }
     .tableSection h2,
     .tableSection1 h2{
-        font-size: 40px; margin-bottom: 60px
+        font-size: 30px; margin-bottom: 40px
     }
     [class ^= 'inventory']{
         display: none;
@@ -422,14 +422,14 @@
         width: 55px; line-height: 25px; position: absolute; padding: 0 5px;
     }
     .tableSection table tbody tr th:first-child{
-        width: 60%;
+        width: 49%;
     }
     .tableSection table tbody tr th:not(:first-child){
         width: 11%;
     }
     .tableSection table tbody tr th,
     .tableSection1 table tbody tr th{
-        font-size: 23px; font-weight: bold; line-height: 96px;
+        font-size: 16px; font-weight: bold; line-height: 40px;
     }
     .tableSection table tbody tr:first-child,
     .tableSection1 table tbody tr:first-child{
@@ -449,7 +449,7 @@
     }
     .tableSection table tbody tr td,
     .tableSection1 table tbody tr td{
-       line-height: 76px; font-size: 13px; font-weight: normal; 
+       line-height: 26px; font-size: 10px; font-weight: normal; 
     }
     .tableSection table tbody tr td:nth-of-type(2),
     .tableSection1 table tbody tr td:nth-of-type(2){
@@ -467,7 +467,7 @@
         text-align: right;
     }
     .tableSection > div:last-child button{
-        width: 9.86%; background: rgb(98,114,0); color: #fff; font-size: 15px; line-height: 30px;
+        width: 21%; background: rgb(98,114,0); color: #fff; font-size: 12px; line-height: 30px;
         border: none; border-radius: 7px; cursor: pointer;
     }
 
