@@ -449,7 +449,7 @@
     }
     .tableSection table tbody tr td,
     .tableSection1 table tbody tr td{
-       line-height: 26px; font-size: 10px; font-weight: normal; 
+       line-height: 30px; font-size: 10px; font-weight: normal; 
     }
     .tableSection table tbody tr td:nth-of-type(2),
     .tableSection1 table tbody tr td:nth-of-type(2){
@@ -457,7 +457,7 @@
     }
     .tableSection table tbody tr td:not(:first-of-type),
     .tableSection1 table tbody tr td:not(:first-of-type){
-        text-align: center;
+        text-align: center; vertical-align: middle;
     }
     .tableSection table tbody tr td a,
     .tableSection1 table tbody tr td a{
