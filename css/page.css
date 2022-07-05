@@ -285,16 +285,16 @@
         margin: 0 auto;
     }
     .joinSection form{
-        width: 40%; margin: 75px 0 95px;
+        width: 90%; margin: 75px 0 95px;
     }
     .joinSection form p{
-        font-size: 30px; text-align: center; margin-bottom: 20px;
+        font-size: 25px; text-align: center; margin-bottom: 20px;
     }
     .joinSection form h2{
-        font-size: 30px; text-align: center; margin-bottom: 60px; font-weight: normal;
+        font-size: 20px; text-align: center; margin-bottom: 60px; font-weight: normal;
     }
     .joinSection form label{
-        display: block; font-size: 25px; margin-bottom: 5px;
+        display: block; font-size: 15px; margin-bottom: 5px;
     }
     .joinSection form input{
         margin-bottom: 10px; width: 100%; background: rgb(226, 226, 226); border: none; height: 40px;
@@ -302,14 +302,14 @@
     }
     .joinSection form input:first-of-type,
     .joinSection form input:nth-of-type(6){
-        width: 73%;
+        width: 69%;
     }
     .joinSection form button:first-of-type{
-        border: none; width: 27%; background: #627200; line-height: 38px; vertical-align: middle;
-        color: #fff; margin-left: -6px; cursor: pointer; font-size: 16px; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+        border: none; width: 30.5%; background: #627200; line-height: 38px; vertical-align: middle;
+        color: #fff; margin-left: -3px; cursor: pointer; font-size: 12px; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
     }
     .joinSection form select{
-        margin-left: -6px; width: 27%; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%); height: 40px; vertical-align: middle;
+        margin-left: -4px; width: 31%; box-shadow: 5px 5px 5px rgb(0 0 0 / 25%); height: 40px; vertical-align: middle;
         border: 2px solid #627200;
     }
     .joinSection form input:last-of-type{
@@ -319,8 +319,8 @@
         text-align: center;
     }
     .joinSection form div button:last-of-type{
-        border: none; width: 38%; background: #627200; line-height: 45px;
-        color: #fff; cursor: pointer; font-size: 20px; border-radius: 5px; 
+        border: none; width: 36%; background: #627200; line-height: 35px;
+        color: #fff; cursor: pointer; font-size: 15px; border-radius: 5px; 
     }
     /*! 회원가입 fin */
     
