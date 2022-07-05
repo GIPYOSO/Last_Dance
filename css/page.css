@@ -7,17 +7,17 @@
 
 @media screen and (max-width: 699px) {
     .mainbackground{
-        max-width: 767px; width: 100%; height: 100vh; position: relative; background-repeat: cover;
+        max-width: 767px; width: 100%; height: 600px; position: relative; background-repeat: cover;
     }
     .mainbackground video{
-        position: absolute; width: 100%; height: 100vh; object-fit: cover;
+        position: absolute; width: 100%; height: 600px; object-fit: cover;
     }
     .mainbackground .MainV{
-        max-width: 767px; width: 100%; height: 100vh; position: absolute; z-index: 1;
+        max-width: 767px; width: 100%; height: 600px; position: absolute; z-index: 1;
         background: rgba(0,0,0,0.6);
     }
     .MainV > div{
-        text-align: center; margin-top: 50%; line-height: 50px;
+        text-align: center; margin-top: 57%; line-height: 50px;
     }
     .MainV > div h2{
         font-size: 20px; font-weight: normal;
@@ -35,7 +35,7 @@
         text-align: center;
     }
     .WeatherSection h2{
-        font-size: 50px; text-align: center; padding-top: 60px; color: 627200; margin-bottom: 70px;
+        font-size: 30px; text-align: center; padding-top: 60px; color: 627200; margin-bottom: 70px;
         font-weight: normal; color: #627200;
     }
     .WeatherSection > div{
@@ -45,7 +45,7 @@
         display: block; content: ''; visibility: hidden; clear: both;
     }
     .WeatherSection > div h3{
-        font-size: 30px; margin-bottom: 20px;
+        font-size: 20px; margin-bottom: 20px;
     }
     .WeatherSection > div div{
         width: 20%; float: left;
@@ -54,7 +54,7 @@
         display: block; font-size: 14px;
     }
     .WeatherSection > div div p{
-        font-size: 18px; margin-bottom: 20px;
+        font-size: 15px; margin-bottom: 20px;
     }
     .WeatherSection > div div ul{
         width: 100%; float: left; text-align: center;
@@ -63,7 +63,7 @@
         display: block; content: ''; visibility: hidden; clear: both;
     }
     .WeatherSection > div div ul li{
-        color: black; line-height: 25px; font-size: 14px;
+        color: black; line-height: 25px; font-size: 12px;
     }
     .WeatherSection > div:last-of-type{
         padding-bottom: 45px;
@@ -72,26 +72,26 @@
         width: 80%; margin-bottom: -4px;
     }
     .hob{
-        max-width: 1279px; width: 100%; background: url(../images/corn.jpg) no-repeat; text-align: center;
+        max-width: 700px; width: 100%; background: url(../images/corn.jpg) no-repeat; text-align: center;
         background-size: cover;
     }
     .hob div{
-        background: rgba(0,0,0,0.4); position: relative; width: 100%; height: 400px;
+        background: rgba(0,0,0,0.4); position: relative; width: 100%; height: 200px;
     }
     .hob div h2{
-        position: absolute;  font-size: 30px; color: #fff; top: 135px; left: 45.05%;
+        position: absolute;  font-size: 18px; color: #fff; top: 25px; left: 35.05%;
         animation: hobs1 1.7s ease-in-out;
     }
     .hob div p{
-        position: absolute; font-size: 18px; color: #fff; line-height: 40px; width: 70%;
-        top: 210px; left: 18.65%; animation: hobs2 1s ease-in-out;
+        position: absolute; font-size: 13px; color: #fff; line-height: 25px; width: 70%;
+        top: 50px; left: 14.65%; animation: hobs2 1s ease-in-out;
     }
     @keyframes hobs1{
         from{
             left: 0;
             opacity: 0;
         }to{
-            left: 45.05%;
+            left: 35.05%;
             opacity: 1;
         }
     }
@@ -100,7 +100,7 @@
             left: 0;
             opacity: 0;
         }to{
-            left: 18.65%;
+            left: 14.65%;
             opacity: 1;
         }
     }
@@ -126,11 +126,11 @@
 
     .ParcelOut{
         max-width: 1279px; width: 100%; background: url(../images/main_D_bg.png) no-repeat;
-        margin: 0 auto; height: 1000px; overflow-x: hidden; overflow: hidden;
+        margin: 0 auto; height: 700px; overflow-x: hidden; overflow: hidden; text-align: center;
     }
     .ParcelOut div:first-of-type{
         width: 100%; padding-top: 60px; display: flex; justify-content: center; align-items: center;
-        margin-bottom: 130px;
+        margin-bottom: 50px;
     }
     .ParcelOut div:after{
         display: block; content: ''; visibility: hidden; clear: both;
@@ -139,21 +139,21 @@
         float: left; border-bottom: 2px solid #627200; width: 6%; display: block;
     }
     .ParcelOut div h2{
-        font-size: 50px; color: #627200; float: left; margin: 0 3%;
+        font-size: 30px; color: #627200; float: left; margin: 0 3%; line-height: 40px;
     }
     .ParcelOut div:last-of-type{
         display: flex; justify-content: center; align-items: center; position: relative;
-        margin-bottom: 60px; 
+        margin-bottom: 120px; 
     }
     .ParcelOut div:last-of-type .parimg1{
-        position: absolute; top: -50px; left: 0px; display: block; max-width: 30%;
+        position: absolute; top: -50px; left: 0px; display: block; max-width: 50%;
         animation: hobs3 2s ease-in-out; z-index: 0;
     }
     .ParcelOut div:last-of-type img:nth-of-type(2){
-        z-index: 1; width: 40%;
+        z-index: 1; width: 83%;
     }
     .ParcelOut div:last-of-type .parimg2{
-        position: absolute; top: -50px; right: 0; display: block; max-width: 30%;
+        position: absolute; top: -50px; right: 0; display: block; max-width: 50%;
         animation: hobs4 2s ease-in-out; z-index: 0;
     }
 
@@ -195,7 +195,7 @@
     }
 
     .ParcelOut div:last-of-type p{
-        position: absolute; color: #fff; font-size: 30px; text-align: center; line-height: 45px;
+        position: absolute; color: #fff; font-size: 21px; text-align: center; line-height: 45px;
         z-index: 2;
     }
     .ParcelOut div:last-of-type p mark{
@@ -204,17 +204,17 @@
     }
     .ParcelOut a{
         display: block; margin: 0 auto; border: 1px solid #627200; color: #627200; z-index: 13;
-        text-align: center; width: 20%; line-height: 50px; font-size: 20px; font-weight: bold;
+        text-align: center; width: 30%; line-height: 40px; font-size: 18px; font-weight: bold;
     }
     .WiseSaying{
         max-width: 1279px; width: 100%; background: url(../images/main_yhp.jpg) no-repeat;
         background-size: cover; text-align: center;
     }
     .WiseSaying div{
-        background: rgba(0,0,0,0.4); padding: 100px 0;
+        background: rgba(0,0,0,0.4); padding: 50px 0;
     }
     .WiseSaying div h2{
-        font-size: 35px; color: #fff; line-height: 50px;
+        font-size: 13px; color: #fff; line-height: 25px;
     }
     /*! Main Page fin */
 

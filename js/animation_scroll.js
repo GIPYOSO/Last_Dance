@@ -15,7 +15,7 @@ window.addEventListener('scroll',function(){
         mainText2.style.animation="desappear2 1.7s ease-in-out forwards";
     }
     
-    if((value > 1800) && (value < 2800)){
+    if((value > 1500) && (value < 2800)){
         mainText3.style.animation="hobs3 2s ease-in-out";
         mainText4.style.animation="hobs4 2s ease-in-out";
     }else{
