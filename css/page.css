@@ -79,7 +79,7 @@
         background: rgba(0,0,0,0.4); position: relative; width: 100%; height: 200px;
     }
     .hob div h2{
-        position: absolute;  font-size: 18px; color: #fff; top: 25px; left: 35.05%;
+        position: absolute;  font-size: 18px; color: #fff; top: 25px; left: 36.05%;
         animation: hobs1 1.7s ease-in-out;
     }
     .hob div p{
@@ -91,7 +91,7 @@
             left: 0;
             opacity: 0;
         }to{
-            left: 35.05%;
+            left: 36.05%;
             opacity: 1;
         }
     }
