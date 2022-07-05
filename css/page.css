@@ -449,7 +449,7 @@
     }
     .tableSection table tbody tr td,
     .tableSection1 table tbody tr td{
-       line-height: 30px; font-size: 10px; font-weight: normal; 
+       line-height: 40px; font-size: 10px; font-weight: normal; 
     }
     .tableSection table tbody tr td:nth-of-type(2),
     .tableSection1 table tbody tr td:nth-of-type(2){
