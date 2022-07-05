@@ -1,7 +1,7 @@
 .MainV > div h2, .WeatherSection h2, .WeatherSection > div h3, .ParcelOut div:last-of-type p mark, .loginSection form fieldset h2,
 .loginSection form fieldset > div input:last-of-type, .joinSection form h2, .MyPageS .calendar .content-left, .calendar .input-data, .calendar .input-box, .calendar .content-right thead tr td,
 #current-year-month, .MyPageS > div > div:nth-of-type(2) h3{
-    font-family: 'Tiro Devanagari Sanskrit Regular';
+    font-family: 'Noto serif KR', serif;
 }
 
 

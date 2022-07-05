@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
 
 a{
     text-decoration: none;
@@ -8,7 +7,7 @@ button a{color: #fff;}
 
 footer h1, footer > div div:last-of-type address p:not(:nth-child(2)),
 footer > div div:last-of-type address p:nth-child(2){
-    font-family: 'Tiro Devanagari Sanskrit Regular';
+    font-family: 'Noto serif KR', serif;
 }
 
 body{
