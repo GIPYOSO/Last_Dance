@@ -392,19 +392,17 @@
 
     /*! 운영정보 Page fin */
     .gong{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.jpg ) no-repeat;
+        max-width: 1920px; width: 100%; height: 90px; background: url(../images/gong.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .comubg{
-        max-width: 1920px; width: 100%; height: 60px; background: url(../images/comuBG.jpg ) no-repeat;
+        max-width: 1920px; width: 100%; height: 90px; background: url(../images/comuBG.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
-    .tableSection,
-    .tableSection1{
+    [class ^= 'tableSection']{
         max-width: 700px; width: 100%; margin: 0 auto; margin-bottom: 80px;
     }
-    .tableSection h2,
-    .tableSection1 h2{
+    [class ^= 'tableSection'] h2{
         font-size: 30px; margin-bottom: 40px
     }
     [class ^= 'inventory']{
@@ -413,134 +411,116 @@
     [class ^= 'inventory'].active{
         display: block; margin-bottom: 10px;
     }
-    .tableSection table,
-    .tableSection1 table{
+    [class ^= 'tableSection'] table{
         width: 100%;
     }
     .tableSection table tbody tr span{
         font-size: 13px; background: #FFC2C2; color: #FE0000; 
         width: 55px; line-height: 25px; position: absolute; padding: 0 5px;
     }
-    .tableSection table tbody tr th:first-child{
+    [class ^= 'tableSection'] table tbody tr th:first-child{
         width: 49%;
     }
-    .tableSection table tbody tr th:not(:first-child){
+    [class ^= 'tableSection'] table tbody tr th:not(:first-child){
         width: 11%;
     }
-    .tableSection table tbody tr th,
-    .tableSection1 table tbody tr th{
+    [class ^= 'tableSection'] table tbody tr th{
         font-size: 16px; font-weight: bold; line-height: 40px;
     }
-    .tableSection table tbody tr:first-child,
-    .tableSection1 table tbody tr:first-child{
+    [class ^= 'tableSection'] table tbody tr:first-child{
         border-top: 2px solid #627200;
     }
-    .tableSection table tbody tr:nth-child(2),
-    .tableSection1 table tbody tr:nth-child(2){
+    [class ^= 'tableSection'] table tbody tr:nth-child(2){
         background: rgb(248, 255, 205);
     }
-    .tableSection table tbody tr:nth-child(2) td mark,
-    .tableSection1 table tbody tr:nth-child(2) td mark{
+    [class ^= 'tableSection'] table tbody tr:nth-child(2) td mark{
         background: none; font-style: normal; color: red;
     }
-    .tableSection table tbody tr,
-    .tableSection1 table tbody tr{
+    [class ^= 'tableSection'] table tbody tr{
         border-bottom: 1px solid #627200;
     }
-    .tableSection table tbody tr td,
-    .tableSection1 table tbody tr td{
-       line-height: 40px; font-size: 10px; font-weight: normal; 
+    [class ^= 'tableSection'] table tbody tr td{
+       padding: 30px 0 30px 5px; font-size: 10px; font-weight: normal; 
     }
-    .tableSection table tbody tr td:nth-of-type(2),
-    .tableSection1 table tbody tr td:nth-of-type(2){
+    [class ^= 'tableSection'] table tbody tr td:nth-of-type(2){
         width: 20%;
     }
-    .tableSection table tbody tr td:not(:first-of-type),
-    .tableSection1 table tbody tr td:not(:first-of-type){
+    [class ^= 'tableSection'] table tbody tr td:not(:first-of-type){
         text-align: center; vertical-align: middle;
     }
-    .tableSection table tbody tr td a,
-    .tableSection1 table tbody tr td a{
+    [class ^= 'tableSection'] tbody tr td a,
+    [class ^= 'tableSection'] table tbody tr td a{
         color: #000;  padding: 0 1%; font-weight: normal;
     }
-    .tableSection > div:last-child{
+    [class ^= 'tableSection'] > div:last-child{
         text-align: right;
     }
-    .tableSection > div:last-child button{
-        width: 16%; background: rgb(98,114,0); color: #fff; font-size: 12px; line-height: 30px;
+    [class ^= 'tableSection'] > div:last-child button{
+        width: 21%; background: rgb(98,114,0); color: #fff; font-size: 12px; line-height: 30px;
         border: none; border-radius: 7px; cursor: pointer;
     }
 
+
+
     /*! 자유게시판, 공지사항 fin */
     
-    .readpage, .readpage1{
+    [class ^= 'readpage']{
         max-width: 700px; width: 100%; margin: 0 auto;
     }
-    .readpage h2, .readpage1 h2{
+    [class ^= 'readpage'] h2{
         text-indent: -9999px;
     }
-    .readpage > div:first-of-type,
-    .readpage1 > div:first-of-type{
+    [class ^= 'readpage'] > div:first-of-type{
         text-align: right; margin-bottom: 20px;
     }
-    .readpage > div:first-of-type button:first-child,
-    .readpage1 > div:first-of-type button:first-child{
+    [class ^= 'readpage'] > div:first-of-type button:first-child{
         width: 8.9%;
     }
-    .readpage > div:first-of-type button,
-    .readpage1 > div:first-of-type button{
+    [class ^= 'readpage'] > div:first-of-type button{
         background: #627200; border: none; color: #fff; width: 13%; height: 40px;
         border-radius: 7px;
     }
-    .readpage > div:first-of-type button:not(:first-child),
-    .readpage1 > div:first-of-type button:not(:first-child){
+    [class ^= 'readpage'] > div:first-of-type button:not(:first-child){
         margin-left: 0.3%;
     }
-    .readpage > div:first-of-type button a,
-    .readpage1 > div:first-of-type button a{
+    [class ^= 'readpage'] > div:first-of-type button a{
         font-size: 15px; color: #fff;
     }
-    .readpage button span,
-    .readpage1 button span{
+    [class ^= 'readpage'] button span{
         font-size: 16px; padding-right: 10%;
     }
     .readpage > div:nth-of-type(2){
         border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 65px;
     }
-    .readpage1 > div:nth-of-type(2){
+    [class ^= 'readpage'] > div:nth-of-type(2){
         border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 10px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type{
         border-bottom: 2px solid #627200; margin-bottom: 30px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type a,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type a{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type a{
         color: #627200; font-weight: bold;
         font-size: 20px; margin-bottom: 15px; display: block;
     }
     .readpage > div:nth-of-type(2) > div:first-of-type h3{
         color: #FE0000; font-size: 20px; margin-bottom: 15px;
     }
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3{
         font-size: 20px; margin-bottom: 15px;
     }
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 mark{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3 mark{
         font-size: 16px; background: none; font-style: normal; font-weight: normal;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type h3 span,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 span{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3 span{
         display: inline-block; background: #FFC2C2; width: 6%; text-align: center;
         font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type p{
         font-size: 15px; color: black;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type time,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type time{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type time{
         display: block; font-size: 13px; color: #adadad; margin-bottom: 25px;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
@@ -553,8 +533,7 @@
     .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p mark{
         background: none; color: #FE0000; font-style: normal;
     }
-    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
         font-size: 20px; font-weight: bold;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){
@@ -631,7 +610,7 @@
         text-align: right;
     }
     .writingS button{
-        border: none; background: #627200; width: 9.9%; height: 40px;
+        border: none; background: #627200; width: 21%; height: 40px;
         font-size: 15px; border-radius: 7px; color: #fff; cursor: pointer;
     }
     .writingS button a{
@@ -648,17 +627,17 @@
     }
     .writingS > div:nth-of-type(2) > div:first-of-type div label,
     .writingS > div:nth-of-type(2) > div:first-of-type label{
-        font-size: 20px; vertical-align: middle;
+        font-size: 16px; vertical-align: middle;
     }
     .writingS > div:nth-of-type(2) > div:first-of-type div select{
-        width: 15.97%; margin-left: 1%; height: 30px;
+        width: 40%; margin-left: 1%; height: 30px;
     }
     .writingS > div:nth-of-type(2) > div:first-of-type input{
-        margin-left: 3.7%; height: 30px; width: 70%; margin-bottom: 30px;
-        box-sizing: border-box; font-size: 18px;
+        margin-left: 3.7%; height: 30px; width: 55%; margin-bottom: 30px;
+        box-sizing: border-box; font-size: 12px;
     }
     .writingS > div:nth-of-type(2) > div:first-of-type span{
-     margin-left: 1.5%; color: #a2a2a2; font-size: 13px;
+     margin-left: 1.5%; color: #a2a2a2; font-size: 10px;
     }
     /*! Writing Page fin*/
 
@@ -1194,19 +1173,17 @@
 
     /*! 운영정보 Page fin */
     .gong{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/gong.jpg ) no-repeat;
+        max-width: 1920px; width: 100%; height: 200px; background: url(../images/gong.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     .comubg{
-        max-width: 1920px; width: 100%; height: 410px; background: url(../images/comuBG.jpg ) no-repeat;
+        max-width: 1920px; width: 100%; height: 200px; background: url(../images/comuBG.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
-    .tableSection,
-    .tableSection1{
+    [class ^= 'tableSection']{
         max-width: 700px; width: 100%; margin: 0 auto; margin-bottom: 80px;
     }
-    .tableSection h2,
-    .tableSection1 h2{
+    [class ^= 'tableSection'] h2{
         font-size: 40px; margin-bottom: 60px
     }
     [class ^= 'inventory']{
@@ -1215,8 +1192,7 @@
     [class ^= 'inventory'].active{
         display: block; margin-bottom: 10px;
     }
-    .tableSection table,
-    .tableSection1 table{
+    [class ^= 'tableSection'] table{
         width: 100%;
     }
     .tableSection table tbody tr span{
@@ -1229,40 +1205,31 @@
     .tableSection table tbody tr th:not(:first-child){
         width: 11%;
     }
-    .tableSection table tbody tr th,
-    .tableSection1 table tbody tr th{
+    [class ^= 'tableSection'] table tbody tr th{
         font-size: 23px; font-weight: bold; line-height: 96px;
     }
-    .tableSection table tbody tr:first-child,
-    .tableSection1 table tbody tr:first-child{
+    [class ^= 'tableSection'] table tbody tr:first-child{
         border-top: 2px solid #627200;
     }
-    .tableSection table tbody tr:nth-child(2),
-    .tableSection1 table tbody tr:nth-child(2){
+    [class ^= 'tableSection'] table tbody tr:nth-child(2){
         background: rgb(248, 255, 205);
     }
-    .tableSection table tbody tr:nth-child(2) td mark,
-    .tableSection1 table tbody tr:nth-child(2) td mark{
+    [class ^= 'tableSection'] table tbody tr:nth-child(2) td mark{
         background: none; font-style: normal; color: red;
     }
-    .tableSection table tbody tr,
-    .tableSection1 table tbody tr{
+    [class ^= 'tableSection'] table tbody tr{
         border-bottom: 1px solid #627200;
     }
-    .tableSection table tbody tr td,
-    .tableSection1 table tbody tr td{
-       line-height: 76px; font-size: 13px; font-weight: normal; 
+    [class ^= 'tableSection'] table tbody tr td{
+      padding: 40px 0; font-size: 13px; font-weight: normal; 
     }
-    .tableSection table tbody tr td:nth-of-type(2),
-    .tableSection1 table tbody tr td:nth-of-type(2){
+    [class ^= 'tableSection'] table tbody tr td:nth-of-type(2){
         width: 20%;
     }
-    .tableSection table tbody tr td:not(:first-of-type),
-    .tableSection1 table tbody tr td:not(:first-of-type){
+    [class ^= 'tableSection'] table tbody tr td:not(:first-of-type){
         text-align: center;
     }
-    .tableSection table tbody tr td a,
-    .tableSection1 table tbody tr td a{
+    [class ^= 'tableSection'] table tbody tr td a{
         color: #000;  padding: 0 1%; font-weight: normal;
     }
     .tableSection > div:last-child{
@@ -1275,74 +1242,63 @@
 
     /*! 자유게시판, 공지사항 fin */
     
-    .readpage, .readpage1{
+    [class ^= 'readpage']{
         max-width: 700px; width: 100%; margin: 0 auto;
     }
-    .readpage h2, .readpage1 h2{
+    [class ^= 'readpage'] h2{
         text-indent: -9999px;
     }
-    .readpage > div:first-of-type,
-    .readpage1 > div:first-of-type{
+    [class ^= 'readpage'] > div:first-of-type{
         text-align: right; margin-bottom: 20px;
     }
-    .readpage > div:first-of-type button:first-child,
-    .readpage1 > div:first-of-type button:first-child{
+    [class ^= 'readpage'] > div:first-of-type button:first-child{
         width: 8.9%;
     }
-    .readpage > div:first-of-type button,
-    .readpage1 > div:first-of-type button{
+    [class ^= 'readpage'] > div:first-of-type button{
         background: #627200; border: none; color: #fff; width: 13%; height: 40px;
         border-radius: 7px;
     }
-    .readpage > div:first-of-type button:not(:first-child),
-    .readpage1 > div:first-of-type button:not(:first-child){
+    [class ^= 'readpage'] > div:first-of-type button:not(:first-child){
         margin-left: 0.3%;
     }
-    .readpage > div:first-of-type button a,
-    .readpage1 > div:first-of-type button a{
+    [class ^= 'readpage'] > div:first-of-type button a{
         font-size: 15px; color: #fff;
     }
-    .readpage button span,
-    .readpage1 button span{
+    [class ^= 'readpage'] button span{
         font-size: 16px; padding-right: 10%;
     }
     .readpage > div:nth-of-type(2){
         border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 65px;
     }
-    .readpage1 > div:nth-of-type(2){
+    [class ^= 'readpage'] > div:nth-of-type(2){
         border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 10px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type{
         border-bottom: 2px solid #627200; margin-bottom: 30px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type a,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type a{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type a{
         color: #627200; font-weight: bold;
         font-size: 20px; margin-bottom: 15px; display: block;
     }
     .readpage > div:nth-of-type(2) > div:first-of-type h3{
         color: #FE0000; font-size: 20px; margin-bottom: 15px;
     }
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3{
         font-size: 20px; margin-bottom: 15px;
     }
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 mark{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3 mark{
         font-size: 16px; background: none; font-style: normal; font-weight: normal;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type h3 span,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 span{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3 span{
         display: inline-block; background: #FFC2C2; width: 6%; text-align: center;
         font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type p{
         font-size: 15px; color: black;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type time,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type time{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type time{
         display: block; font-size: 13px; color: #adadad; margin-bottom: 25px;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
@@ -1355,8 +1311,7 @@
     .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p mark{
         background: none; color: #FE0000; font-style: normal;
     }
-    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
         font-size: 20px; font-weight: bold;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){
@@ -2002,12 +1957,10 @@
         max-width: 1920px; width: 100%; height: 410px; background: url(../images/comuBG.jpg ) no-repeat;
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
-    .tableSection,
-    .tableSection1{
+    [class ^= 'tableSection']{
         max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 80px;
     }
-    .tableSection h2,
-    .tableSection1 h2{
+    [class ^= 'tableSection'] h2{
         font-size: 60px; margin-bottom: 60px
     }
     [class ^= 'inventory']{
@@ -2016,8 +1969,7 @@
     [class ^= 'inventory'].active{
         display: block; margin-bottom: 10px;
     }
-    .tableSection table,
-    .tableSection1 table{
+    [class ^= 'tableSection'] table{
         width: 100%;
     }
     .tableSection table tbody tr span{
@@ -2030,36 +1982,28 @@
     .tableSection table tbody tr th:not(:first-child){
         width: 11%;
     }
-    .tableSection table tbody tr th,
-    .tableSection1 table tbody tr th{
+    [class ^= 'tableSection'] table tbody tr th{
         font-size: 32px; font-weight: bold; line-height: 96px;
     }
-    .tableSection table tbody tr:first-child,
-    .tableSection1 table tbody tr:first-child{
+    [class ^= 'tableSection'] table tbody tr:first-child{
         border-top: 2px solid #627200;
     }
-    .tableSection table tbody tr:nth-child(2),
-    .tableSection1 table tbody tr:nth-child(2){
+    [class ^= 'tableSection'] table tbody tr:nth-child(2){
         background: rgb(248, 255, 205);
     }
-    .tableSection table tbody tr:nth-child(2) td mark,
-    .tableSection1 table tbody tr:nth-child(2) td mark{
+    [class ^= 'tableSection'] table tbody tr:nth-child(2) td mark{
         background: none; font-style: normal; color: red;
     }
-    .tableSection table tbody tr,
-    .tableSection1 table tbody tr{
+    [class ^= 'tableSection'] table tbody tr{
         border-bottom: 1px solid #627200;
     }
-    .tableSection table tbody tr td,
-    .tableSection1 table tbody tr td{
+    [class ^= 'tableSection'] table tbody tr td{
        line-height: 76px; font-size: 20px; font-weight: normal;
     }
-    .tableSection table tbody tr td:not(:first-of-type),
-    .tableSection1 table tbody tr td:not(:first-of-type){
+    [class ^= 'tableSection'] table tbody tr td:not(:first-of-type){
         text-align: center;
     }
-    .tableSection table tbody tr td a,
-    .tableSection1 table tbody tr td a{
+    [class ^= 'tableSection'] table tbody tr td a{
         color: #000;  padding: 0 1%; font-weight: normal;
     }
     .tableSection > div:last-child{
@@ -2072,35 +2016,29 @@
 
     /*! 자유게시판, 공지사항 fin */
     
-    .readpage, .readpage1{
+    [class ^= 'readpage']{
         max-width: 1100px; width: 100%; margin: 0 auto;
     }
-    .readpage h2, .readpage1 h2{
+    [class ^= 'readpage'] h2{
         text-indent: -9999px;
     }
-    .readpage > div:first-of-type,
-    .readpage1 > div:first-of-type{
+    [class ^= 'readpage'] > div:first-of-type{
         text-align: right; margin-bottom: 20px;
     }
-    .readpage > div:first-of-type button:first-child,
-    .readpage1 > div:first-of-type button:first-child{
+    [class ^= 'readpage'] > div:first-of-type button:first-child{
         width: 5.9%;
     }
-    .readpage > div:first-of-type button,
-    .readpage1 > div:first-of-type button{
+    [class ^= 'readpage'] > div:first-of-type button{
         background: #627200; border: none; color: #fff; width: 8%; height: 40px;
         border-radius: 7px;
     }
-    .readpage > div:first-of-type button:not(:first-child),
-    .readpage1 > div:first-of-type button:not(:first-child){
+    [class ^= 'readpage'] > div:first-of-type button:not(:first-child){
         margin-left: 0.3%;
     }
-    .readpage > div:first-of-type button a,
-    .readpage1 > div:first-of-type button a{
+    [class ^= 'readpage'] > div:first-of-type button a{
         font-size: 15px; color: #fff;
     }
-    .readpage button span,
-    .readpage1 button span{
+    [class ^= 'readpage'] button span{
         font-size: 16px; padding-right: 10%;
     }
     .readpage > div:nth-of-type(2){
@@ -2111,12 +2049,10 @@
         border: 1px solid #627200; padding: 2%; box-sizing: border-box;
         margin-bottom: 10px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type{
         border-bottom: 2px solid #627200; margin-bottom: 30px;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type a,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type a{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type a{
         color: #627200; font-weight: bold;
         font-size: 20px; margin-bottom: 15px; display: block;
     }
@@ -2129,17 +2065,14 @@
     .readpage1 > div:nth-of-type(2) > div:first-of-type h3 mark{
         font-size: 16px; background: none; font-style: normal; font-weight: normal;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type h3 span,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type h3 span{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type h3 span{
         display: inline-block; background: #FFC2C2; width: 4%; text-align: center;
         font-size: 16px; line-height: 20px; border-radius: 10px; margin-right: 0.7%;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type p{
         font-size: 15px; color: black;
     }
-    .readpage > div:nth-of-type(2) > div:first-of-type time,
-    .readpage1 > div:nth-of-type(2) > div:first-of-type time{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:first-of-type time{
         display: block; font-size: 13px; color: #adadad; margin-bottom: 25px;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) mark{
@@ -2152,8 +2085,7 @@
     .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) p mark{
         background: none; color: #FE0000; font-style: normal;
     }
-    .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p,
-    .readpage1 > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
+    [class ^= 'readpage'] > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p{
         font-size: 20px; font-weight: bold;
     }
     .readpage > div:nth-of-type(2) > div:nth-of-type(2) > div:first-of-type p:nth-of-type(6){

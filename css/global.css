@@ -45,7 +45,7 @@ body{
 
     .NoneColor-Header nav button,
     .ColorH nav button{
-        position: absolute; top: 53px; right: 8.8%; width: 40px; height: 28px; background-color: transparent;
+        position: absolute; top: 53px; right: 3%; width: 40px; height: 28px; background-color: transparent;
         border: none; text-indent: -9999px; z-index: 3; cursor: pointer;
     }
     .NoneColor-Header nav button span{
@@ -109,7 +109,7 @@ body{
         margin-top: 40px; display: block; padding-top: 6px;
     }
     header span a{
-        line-height: 44px; margin-left: 34%; font-size: 15px; font-weight: bold; 
+        line-height: 44px; margin-left: 34%; font-size: 15px; font-weight: bold; display: none;
     }
     .NoneColor-Header span a{
         color: #fff;
@@ -297,7 +297,7 @@ body{
 
     .NoneColor-Header .gnb,
     .ColorH .gnb{
-        position: fixed; left:100%; width:100%; padding: 150px 0 100px; text-align: center;
+        position: fixed; left:100%; width:100%; padding: 100px 0 100px; text-align: center;
         background: rgba(78,90,0,.95); transition-duration: 0.4s; top: 0; z-index: 2;
     }
     .NoneColor-Header .gnb.on,
@@ -327,7 +327,7 @@ body{
         margin-top: 40px; display: block; padding-top: 6px;
     }
     header span a{
-        line-height: 55px; margin-left: 66%; font-size: 20px; font-weight: bold; 
+        line-height: 55px; margin-left: 66%; font-size: 20px; font-weight: bold;
     }
     .NoneColor-Header span a{
         color: #fff;
@@ -349,7 +349,7 @@ body{
         list-style: none; text-align: center;
     }
     .paging ol li{
-        display: inline-block; border: 1px solid #fff; padding: 16px 25px;
+        display: inline-block; border: 1px solid #fff; padding: 5px 14px;
         transition-duration: 0.5s; cursor: pointer; line-height: 25px; border-radius: 50%;
     }
     .paging ol li.active{
