@@ -617,7 +617,7 @@
         color: #fff;
     }
     .writingS > div:nth-of-type(2){
-        margin-bottom: 20px; border: 1px solid #627200; padding: 2.083%;
+        margin-bottom: 20px; border: 1px solid #627200; padding: 5% 2.083% 2.083% 2.083%;
     }
     .writingS > div:nth-of-type(2) > div:first-of-type{
         border-bottom: 1px solid #627200; margin-bottom: 30px;
