@@ -297,7 +297,7 @@ body{
 
     .NoneColor-Header .gnb,
     .ColorH .gnb{
-        position: fixed; left:100%; width:100%; padding: 60px 0 200px; text-align: center;
+        position: fixed; left:100%; width:100%; padding: 70px 0 400px; text-align: center;
         background: rgba(78,90,0,.95); transition-duration: 0.4s; top: 0; z-index: 2;
     }
     .NoneColor-Header .gnb.on,
