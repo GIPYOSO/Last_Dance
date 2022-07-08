@@ -297,7 +297,7 @@ body{
 
     .NoneColor-Header .gnb,
     .ColorH .gnb{
-        position: fixed; left:100%; width:100%; padding: 100px 0 100px; text-align: center;
+        position: fixed; left:100%; width:100%; padding: 60px 0 100px; text-align: center;
         background: rgba(78,90,0,.95); transition-duration: 0.4s; top: 0; z-index: 2;
     }
     .NoneColor-Header .gnb.on,
@@ -306,7 +306,7 @@ body{
     }
     .NoneColor-Header .gnb > li,
     .ColorH .gnb > li {
-        margin-bottom: 70px; font-size: 30px;  color: #fff;
+        margin-bottom: 70px; font-size: 25px;  color: #fff;
     }
     .NoneColor-Header .gnb > li > a,
     .ColorH .gnb > li > a{
@@ -315,11 +315,11 @@ body{
     
     .NoneColor-Header .gnb li ul a,
     .ColorH .gnb li ul a{
-        font-size: 18px; color: #fff;
+        font-size: 16px; color: #fff;
     }
     .NoneColor-Header .gnb li ul li,
     .ColorH .gnb li ul li{
-        margin-top: 20px; 
+        margin-top: 15px; 
     }
 
 
@@ -374,12 +374,12 @@ body{
        font-size: 20px; position: absolute; right: 0;
     }
     .CommentForm input{
-        width: 92.72%; box-sizing: border-box; height: 25px;
+        width: 87%; box-sizing: border-box; height: 25px;
         border: 1px solid #627200; margin-bottom: 60px;
     }
     .CommentForm button{
         font-size: 15px;border: none; background: #627200; color: #fff;
-        width: 7.27%; height: 25px; vertical-align: middle; cursor: pointer;
+        width: 13%; height: 25px; vertical-align: middle; cursor: pointer;
     }
     .CommentForm ul{
         margin-bottom: 80px;
