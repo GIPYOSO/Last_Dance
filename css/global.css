@@ -79,7 +79,7 @@ body{
 
     .NoneColor-Header .gnb,
     .ColorH .gnb{
-        position: fixed; left:100%; width:100%; padding: 90px 0 260px; text-align: center;
+        position: fixed; left:100%; width:100%; padding: 90px 0 600px; text-align: center;
         background: rgba(78,90,0,.95); transition-duration: 0.4s; top: 0; z-index: 2;
     }
     .NoneColor-Header .gnb.on,
