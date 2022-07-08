@@ -1193,9 +1193,12 @@
     [class ^= 'tableSection'] table{
         width: 100%;
     }
+    .tableSection table tbody tr{
+        position: relative;
+    }
     .tableSection table tbody tr span{
-        font-size: 13px; background: #FFC2C2; color: #FE0000; 
-        width: 55px; line-height: 25px; position: absolute; padding: 0 5px;
+        font-size: 13px; background: #FFC2C2; color: #FE0000; line-height: 25px; position: absolute; padding: 0 5px;
+        top: 0;
     }
     .tableSection table tbody tr th:first-child{
         width: 60%;
@@ -1219,7 +1222,7 @@
         border-bottom: 1px solid #627200;
     }
     [class ^= 'tableSection'] table tbody tr td{
-      padding: 40px 0; font-size: 13px; font-weight: normal; 
+        height: 80px; font-size: 15px; font-weight: normal; vertical-align: middle; 
     }
     [class ^= 'tableSection'] table tbody tr td:nth-of-type(2){
         width: 20%;
