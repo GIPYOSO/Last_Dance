@@ -785,7 +785,6 @@
 
 /* ? mobile */
 
-
 @media screen and (min-width: 700px) and (max-width: 1279px) {
     .mainbackground{
         max-width: 1278px; width: 100%; height: 700px; position: relative; background-repeat: cover;
