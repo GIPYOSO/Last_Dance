@@ -297,7 +297,7 @@ body{
 
     .NoneColor-Header .gnb,
     .ColorH .gnb{
-        position: fixed; left:100%; width:100%; padding: 60px 0 100px; text-align: center;
+        position: fixed; left:100%; width:100%; padding: 60px 0 200px; text-align: center;
         background: rgba(78,90,0,.95); transition-duration: 0.4s; top: 0; z-index: 2;
     }
     .NoneColor-Header .gnb.on,
@@ -306,11 +306,11 @@ body{
     }
     .NoneColor-Header .gnb > li,
     .ColorH .gnb > li {
-        margin-bottom: 60px; font-size: 25px;  color: #fff;
+        margin-bottom: 50px; font-size: 25px;  color: #fff;
     }
     .NoneColor-Header .gnb > li > a,
     .ColorH .gnb > li > a{
-        padding: 20px; display:inline-block; font-size: 30px; color: #fff;
+        padding: 20px; display:inline-block; font-size: 25px; color: #fff;
     }
     
     .NoneColor-Header .gnb li ul a,
