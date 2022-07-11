@@ -392,7 +392,7 @@
     }
     .accordionContainer > li > div:last-child mark{
         background: none; font-weight: nomal; font-style: normal;
-        font-size: 15px; padding: 10px 2%;
+        font-size: 15px; padding: 10px 2%; color: #FFEBD3;
     }
     .accordionContainer > li p mark{
         background: none; font-weight: nomal; font-style: normal;
@@ -1128,7 +1128,7 @@
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 679px; width: 100%; margin: 0 auto;
+        max-width: 1280px; width: 96%; margin: 0 auto;
     }
     [id ^='OStab']{
         display: none;
@@ -1170,10 +1170,10 @@
     }
     .accordionContainer > li > div:last-child mark{
         background: none; font-weight: bold; font-style: normal;
-        font-size: 30px; padding: 10px 2%;
+        font-size: 30px; padding: 10px 2%; color: #FFEBD3;
     }
     .accordionContainer > li p mark{
-        background: none; font-weight: bold; font-style: normal;
+        background: none; font-weight: bold; font-style: normal; 
     }
     .accordionContainer > li > div:last-child ol{
         color: #FFEBD3; font-weight: bold; font-size: 20px;
@@ -1199,7 +1199,7 @@
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     [class ^= 'tableSection']{
-        max-width: 700px; width: 100%; margin: 0 auto; margin-bottom: 80px;
+        max-width: 1280px; width: 96%; margin: 0 auto; margin-bottom: 80px;
     }
     [class ^= 'tableSection'] h2{
         font-size: 40px; margin-bottom: 60px
@@ -1908,7 +1908,7 @@
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 1440px; width: 100%; margin: 0 auto;
+        max-width: 1440px; width: 96%; margin: 0 auto;
     }
     [id ^='OStab']{
         display: none;
@@ -1950,7 +1950,7 @@
     }
     .accordionContainer > li > div:last-child mark{
         background: none; font-weight: bold; font-style: normal;
-        font-size: 30px; padding: 10px 2%;
+        font-size: 30px; padding: 20px 2%; color: #FFEBD3;
     }
     .accordionContainer > li p mark{
         background: none; font-weight: bold; font-style: normal;
@@ -1979,7 +1979,7 @@
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     [class ^= 'tableSection']{
-        max-width: 1440px; width: 100%; margin: 0 auto; margin-bottom: 80px;
+        max-width: 1440px; width: 96%; margin: 0 auto; margin-bottom: 80px;
     }
     [class ^= 'tableSection'] h2{
         font-size: 60px; margin-bottom: 60px
