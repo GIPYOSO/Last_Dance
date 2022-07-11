@@ -752,6 +752,9 @@
     .MyPageS .calendar .content-right{
         height: 320px; padding: 30px 10px; background: #627200; border-radius: 0 0 20px 20px;
     }
+    .MyPageS .calendar .content-right table{
+        width: 100%; margin: 0 auto;
+    }
     .MyPageS .calendar .content-right table thead tr:last-of-type td{
         width: 14.3%;
     }
