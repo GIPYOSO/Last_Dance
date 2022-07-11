@@ -4,13 +4,18 @@
     font-family: 'Noto serif KR', serif;
 }
 
-@media screen and (min-width: 280px){
+@media screen and (max-width: 280px){
     .MyPageS .calendar .content-right table{
         width: 100%; margin: 0 auto;
     }
 }
+@media screen and (min-width: 281px) and (max-width: 360px){
+    .MyPageS .calendar .content-right table{
+        width: 80%; margin: 0 auto;
+    }
+}
 
-@media screen and (min-width: 412px){
+@media screen and (min-width: 361px) and (max-width: 412px){
     .MyPageS .calendar .content-right table{
         width: 70%; margin: 0 auto;
     }
@@ -757,7 +762,7 @@
         color:#2107e0;
     }
     .MyPageS .calendar .content-right table tr td{
-        height: 40px; text-align: center; font-size: 14px; vertical-align: middle;
+        height: 38px; text-align: center; font-size: 14px; vertical-align: middle;
         cursor: pointer;
     }
     .MyPageS .calendar .calendar-body tbody tr td{
