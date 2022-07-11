@@ -4,6 +4,17 @@
     font-family: 'Noto serif KR', serif;
 }
 
+@media screen and (min-width: 280px){
+    .MyPageS .calendar .content-right table{
+        width: 100%; margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 412px){
+    .MyPageS .calendar .content-right table{
+        width: 70%; margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 699px) {
     .mainbackground{
@@ -325,11 +336,11 @@
     /*! 회원가입 fin */
     
     .opin_bg{
-        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 60px;
-        text-indent: -9999px; margin-bottom: 95px;
+        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 80px;
+        text-indent: -9999px; margin-bottom: 40px;
     }
     .operationS{
-        max-width: 699px; width: 100%; margin: 0 auto;
+        max-width: 699px; width: 96%; margin: 0 auto; padding: 0 2%;
     }
     [id ^='OStab']{
         display: none;
@@ -338,7 +349,7 @@
         display: block;
     }
     .operationS h2{
-        font-size: 30px; margin-bottom: 60px;
+        font-size: 30px; margin-bottom: 30px;
     }
     .operationS > p{
         font-size: 20px; margin-bottom: 10px;
@@ -350,7 +361,7 @@
         padding: 20px 30px 20px 0; color: black; font-size: 16px; border-top: 1px solid #627200;
     }
     .accordionContainer > li div:first-of-type span{
-        position: absolute; right: 2%; top: 22px; font-size: 16px; vertical-align: middle;
+        position: absolute; right: 2%; top: 22px; font-size: 15px; vertical-align: middle;
         transition: all 1s ease-in-out;
     }
     .accordionContainer > li:last-child{
@@ -400,7 +411,7 @@
         background-size: cover; text-indent: -9999px; margin-bottom: 95px;
     }
     [class ^= 'tableSection']{
-        max-width: 700px; width: 100%; margin: 0 auto; margin-bottom: 80px;
+        max-width: 700px; width: 96%; margin: 0 auto; margin-bottom: 80px; padding: 0 2%;
     }
     [class ^= 'tableSection'] h2{
         font-size: 30px; margin-bottom: 40px
@@ -670,8 +681,8 @@
 
 
     .MyPageS{
-        max-width: 699px; width: 100%; padding: 40px 0; background: url(../images/MPbg_1.png) no-repeat;
-        height: 1000px; margin-bottom: 95px;
+        max-width: 699px; width: 100%; padding: 40px 0 0; background: url(../images/MPbg_1.png) no-repeat;
+        height: 950px;
     }
     .MyPageS h2{
         text-indent: -9999px;
@@ -734,10 +745,10 @@
         font-size: 10px; padding: 10px; background: #0b0809; border: none; border-radius: 10px;
     }
     .MyPageS .calendar .content-right{
-        height: 320px; padding: 30px 10px 20px 10px; background: #627200; border-radius: 0 0 20px 20px;
+        height: 320px; padding: 30px 10px; background: #627200; border-radius: 0 0 20px 20px;
     }
-    .MyPageS .calendar .content-right table{
-        width: 50%; margin: 0 auto;
+    .MyPageS .calendar .content-right table thead tr:last-of-type td{
+        width: 14.3%;
     }
     .MyPageS .calendar .sun{
         color:#ef3333;
@@ -746,7 +757,7 @@
         color:#2107e0;
     }
     .MyPageS .calendar .content-right table tr td{
-        width: 40px; height: 40px; text-align: center; font-size: 14px; vertical-align: middle;
+        height: 40px; text-align: center; font-size: 14px; vertical-align: middle;
         cursor: pointer;
     }
     .MyPageS .calendar .calendar-body tbody tr td{
@@ -782,7 +793,6 @@
         }
     }
 }
-
 /* ? mobile */
 
 @media screen and (min-width: 700px) and (max-width: 1279px) {
@@ -1457,7 +1467,7 @@
         display: flex;
     }
     .MyPageS .calendar{
-        width: 95%; margin-left: 3.5%;
+        width: 100%;
     }
     .MyPageS .calendar h3{
         font-size: 60px; margin-bottom: 60px;
