@@ -263,7 +263,7 @@ body{
 
     .NoneColor-Header nav button,
     .ColorH nav button{
-        position: absolute; top: 60px; right: 8.8%; width: 40px; height: 28px; background-color: transparent;
+        position: absolute; top: 60px; right: 8.8%; width: 45px; height: 28px; background-color: transparent;
         border: none; text-indent: -9999px; z-index: 3; cursor: pointer;
     }
     .NoneColor-Header nav button span{
