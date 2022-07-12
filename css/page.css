@@ -1469,8 +1469,8 @@
 
 
     .MyPageS{
-        max-width: 1920px; width: 100%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
-        height: 900px; margin-bottom: 95px; padding-top: 95px;
+        max-width: 1920px; width: 97%; margin: 0 auto; background: url(../images/MPbg_1.png) no-repeat;
+        height: 900px; margin-bottom: 95px; padding-top: 95px; padding-left: 3%;
     }
     .MyPageS h2{
         text-indent: -9999px;
@@ -1478,9 +1478,6 @@
     .MyPageS > div{
         max-width: 768px; width: 100%; margin: 0 auto;
         display: flex;
-    }
-    .MyPageS .calendar{
-        width: 100%;
     }
     .MyPageS .calendar h3{
         font-size: 60px; margin-bottom: 60px;
