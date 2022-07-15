@@ -1464,7 +1464,6 @@
     .mapbox > div > div:nth-of-type(6){
         left: 1280px;
     }
-
     /* ! map sale_list page fin */
 
 
@@ -2221,13 +2220,17 @@
         display: block; content: ''; visibility: hidden; clear: both;
     }
     .mapS .mapslist{
-        width: 30%; height: 800px; float: left; overflow-y: scroll; background: #F8FFCD;
+        width: 20%; height: 800px; float: left; overflow-y: scroll; background: #F8FFCD;
+        line-height: 30px;
+    }
+    .mapS .mapslist ul li:hover{
+        cursor: pointer;
     }
     .mapS .mapslist > div{
         background: #d1d1d1; width: 95%; height: 300px; margin: 5px 2.5%;
     }
     .mapS .mapbox{
-        width: 70%; height: 800px; float: left;    
+        width: 80%; height: 800px; float: left;    
     }
     .mapbox > div > div:nth-of-type(5){
         left: 1210px;
