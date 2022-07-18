@@ -2230,8 +2230,11 @@
         width: 100%; height: 800px; 
     }
     .mapS .mapslist{
-        position: absolute; max-width: 400px; width: 100%; height: 700px; overflow-y: scroll; background: rgba(225,225,225,0.7);
+        position: absolute; max-width: 400px; width: 100%; height: 700px; overflow-y: scroll; background: rgba(255,255,255, 0.7);
         line-height: 30px; top: 30px; z-index: 1; left: 2%; border-radius: 10px 0 0 10px;
+    }
+    .mapS .option{
+        z-index: 1;
     }
     .mapbox > div > div:nth-of-type(5){
         left: 1210px;
