@@ -92,7 +92,7 @@
                     console.log('Received data:', data.vNtcnNgc002.row) // For testing
                     var tmp = "";
                     $.each(data.vNtcnNgc002.row, function(index, val) {
-                        if(val.SJ.includes(strSearch)){
+                        if((val.SJ.includes(strSearch)) || (val.ATDRC_CODE.includes(strSearch))){
                             tmp += "<li onclick='map_load(\""+val.LA+"\",\""+val.LO+" \",\""+val.ATDRC_CODE+" \",\""+val.SJ+" \" );'> * "+val.SJ+"</li>"
                             tmp += " </ul></div>" // Closing paragraph tag
                             arrSalelist.push([val.ATDRC_CODE, val.SJ,val.LA,val.LO]);
