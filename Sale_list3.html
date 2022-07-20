@@ -7,10 +7,13 @@
     <title>분양 리스트</title>
     <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/header.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
-<body>
+<body class="Sale_body">
     <header class="ColorH">
         <h1><a href="index.html"><img src="images/Color_Logo.png" alt=""></a></h1>
         <nav>
@@ -51,7 +54,7 @@
     </header>
     
     <section class="mapS">
-        
+        <h2>MapPage</h2>
         <div class="mapbox" id="map"></div>
         <!--  리스트 넣는곳 SJH-->
         
@@ -71,10 +74,34 @@
                 <div id="pagination"></div>
             </div>
         </div>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <h3 class="modal-title">세부사항</h3>
+                    
+    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        
+                    </div>
+    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=28421dfec276c9cf96871dabc9d7c067"></script>
-
+    
     <script>
         setSaleList(""); // 검색
         function setSaleList(strSearch){
@@ -119,7 +146,7 @@
             
             var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
             
-
+            
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                 mapOption = { 
             center: new kakao.maps.LatLng(varla, varlo), // 지도의 중심좌표
@@ -164,7 +191,7 @@
                 position: markerPosition
             }) 
             marker.setMap(map) 
-            var iwContent = '<div style="padding:5px;">  ' + strGoo + ' <br><a style="font-size:12px" "color:blue" target="_blank"> '+ strTitle +' </a></div>' // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+            var iwContent = '<div class="MarkerBox">  ' + strGoo + ' <br><button id="modal_btn" class="btn btn-danger show MarkerButton" data-toggle="modal" data-target="#myModal" target="_blank" > '+ strTitle +' </button></div>' // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
                 iwPosition = new kakao.maps.LatLng(varla, varlo); //인포윈도우 표시 위치입니다
                 
             
@@ -288,7 +315,7 @@
         // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
         function addMarker(position, idx, title) {
             var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-                imageSize = new kakao.maps.Size(36, 37),  // 마커 이미지의 크기
+                imageSize = new kakao.maps.Size(36, 37), // 마커 이미지의 크기
                 imgOptions =  {
                     spriteSize : new kakao.maps.Size(36, 691), // 스프라이트 이미지의 크기
                     spriteOrigin : new kakao.maps.Point(0, (idx*46)+10), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
@@ -362,6 +389,7 @@
         }
 
     </script>
+    <script src="js/modal.js"></script>
 
     <footer>
         <div>
