@@ -733,7 +733,7 @@
         height: 300px;
     }
     .modal .modal-content .modal-header button{
-        border: none; background: none; font-size: 50px; color: #627200;
+        border: none; background: none; font-size: 50px; color: #627200; cursor: pointer;
     }
     .modal .modal-content .modal-footer{
         margin: 0 10px 15px 0;
@@ -1563,7 +1563,7 @@
         height: 300px;
     }
     .modal .modal-content .modal-header button{
-        border: none; background: none; font-size: 50px; color: #627200;
+        border: none; background: none; font-size: 50px; color: #627200; cursor: pointer;
     }
     .modal .modal-content .modal-footer{
         margin: 0 10px 15px 0;
@@ -2387,7 +2387,7 @@
         height: 300px;
     }
     .modal .modal-content .modal-header button{
-        border: none; background: none; font-size: 50px; color: #627200;
+        border: none; background: none; font-size: 50px; color: #627200; cursor: pointer;
     }
     .modal .modal-content .modal-footer{
         margin: 0 10px 15px 0;
