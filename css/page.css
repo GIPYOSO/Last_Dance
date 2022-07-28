@@ -348,11 +348,12 @@
     /*! 회원가입 fin */
     
     .opin_bg{
-        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 80px;
-        text-indent: -9999px; margin-bottom: 40px;
+        background: url(../images/Op_infor.png) no-repeat; background-size: cover; height: 410px;
+        text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 699px; width: 96%; margin: 0 auto; padding: 0 2%;
+        max-width: 1440px; width: 96%; margin: 95px auto; text-align: center;
+        background-size: cover;
     }
     [id ^='OStab']{
         display: none;
@@ -361,10 +362,22 @@
         display: block;
     }
     .operationS h2{
-        font-size: 30px; margin-bottom: 30px;
+        font-size: 60px; margin-bottom: 60px;
     }
     .operationS > p{
-        font-size: 20px; margin-bottom: 10px;
+        font-size: 40px; margin-bottom: 10px;
+    }
+    .operationS .select_img_td div img{
+        max-width: 700px; width: 100%;height: 400px; margin: 50px 0; display: block;
+    }
+    .operationS table{
+        display: flex; align-items: center; justify-content: center;
+    }
+    .operationS table thead tr td div #attachFile{
+        border: none; background: none;
+    }
+    .operationS .lasttd{
+        font-size: 20px; line-height: 30px; display: block; margin-top: 50px;
     }
     .accordionContainer > li{
        cursor: pointer; position: relative;
@@ -1185,7 +1198,8 @@
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 1280px; width: 96%; margin: 0 auto;
+        max-width: 1440px; width: 96%; margin: 95px auto; text-align: center;
+        background-size: cover;
     }
     [id ^='OStab']{
         display: none;
@@ -1198,6 +1212,18 @@
     }
     .operationS > p{
         font-size: 40px; margin-bottom: 10px;
+    }
+    .operationS .select_img_td div img{
+        max-width: 700px; width: 100%;height: 400px; margin: 50px 0; display: block;
+    }
+    .operationS table{
+        display: flex; align-items: center; justify-content: center;
+    }
+    .operationS table thead tr td div #attachFile{
+        border: none; background: none;
+    }
+    .operationS .lasttd{
+        font-size: 20px; line-height: 30px; display: block; margin-top: 50px;
     }
     .accordionContainer > li{
        cursor: pointer; position: relative;
@@ -2015,7 +2041,8 @@
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
-        max-width: 1440px; width: 96%; margin: 0 auto;
+        max-width: 1440px; width: 96%; margin: 95px auto; text-align: center;
+        background: url(../images/appT_bg.png); background-size: cover; height: 886px;
     }
     [id ^='OStab']{
         display: none;
@@ -2029,6 +2056,20 @@
     .operationS > p{
         font-size: 40px; margin-bottom: 10px;
     }
+    .operationS .select_img_td div img{
+        max-width: 700px; width: 100%;height: 400px; margin: 50px 0; display: block;
+    }
+    .operationS table{
+        display: flex; align-items: center; justify-content: center;
+    }
+    .operationS table thead tr td div #attachFile{
+        border: none; background: none;
+    }
+    .operationS .lasttd{
+        font-size: 20px; line-height: 30px; display: block; margin-top: 50px;
+    }
+
+
     .accordionContainer > li{
        cursor: pointer; position: relative;
     }
@@ -2139,7 +2180,7 @@
     }
     .tableSection > div:last-child button{
         width: 4.86%; background: rgb(98,114,0); color: #fff; font-size: 15px; line-height: 30px;
-        border: none; border-radius: 7px; cursor: pointer;
+        border: none; border-radius: 7px; cursor: pointer; height: 30px;
     }
 
     /*! 자유게시판, 공지사항 fin */
@@ -2384,7 +2425,7 @@
         text-align: right;
     }
     .modal .modal-content .modal-body{
-        height: 300px;
+        height: 100px;
     }
     .modal .modal-content .modal-header button{
         border: none; background: none; font-size: 50px; color: #627200; cursor: pointer;
