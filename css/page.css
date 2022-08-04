@@ -2041,6 +2041,10 @@
         text-indent: -9999px; margin-bottom: 95px;
     }
     .operationS{
+        max-width: 1440px; width: 96%; margin: 95px auto; 
+        
+    }
+    .operationS2{
         max-width: 1440px; width: 96%; margin: 95px auto; text-align: center;
         background: url(../images/appT_bg.png); background-size: cover; height: 886px;
     }
@@ -2050,22 +2054,22 @@
     [id ^='OStab'].active{
         display: block;
     }
-    .operationS h2{
+    [class ^='operationS'] h2{
         font-size: 60px; margin-bottom: 60px;
     }
-    .operationS > p{
+    [class ^='operationS'] > p{
         font-size: 40px; margin-bottom: 10px;
     }
-    .operationS .select_img_td div img{
+    [class ^='operationS'] .select_img_td div img{
         max-width: 700px; width: 100%;height: 400px; margin: 50px 0; display: block;
     }
-    .operationS table{
+    [class ^='operationS'] table{
         display: flex; align-items: center; justify-content: center;
     }
-    .operationS table thead tr td div #attachFile{
+    [class ^='operationS'] table thead tr td div #attachFile{
         border: none; background: none;
     }
-    .operationS .lasttd{
+    [class ^='operationS'] .lasttd{
         font-size: 20px; line-height: 30px; display: block; margin-top: 50px;
     }
 
