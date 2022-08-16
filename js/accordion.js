@@ -7,3 +7,14 @@ function accordionUI(){
         $(this).toggleClass('active');
     });
 }
+
+$(document).ready(function(){
+    mapaccordionUI();
+});
+function mapccordionUI(){
+    var listTarget1 = $(".mapslist");
+    $(listTarget1).click(function(){
+        $('.mapslist').toggleClass('active');
+    });
+}
+

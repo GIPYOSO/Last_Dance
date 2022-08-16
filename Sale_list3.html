@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=28421dfec276c9cf96871dabc9d7c067"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=28421dfec276c9cf96871dabc9d7c067&libraries=services"></script>
 
     <script>
         var results,    //전체 데이터 저장을 위함
@@ -120,13 +120,6 @@
             }
         })
 
-        //엔터로 주소 검색
-		$("#keyword2").keypress(function(event){
-		  if (event.which == '13') {
-		      event.preventDefault();
-		      serch();
-		    }
-		});
 
 
         
