@@ -2513,6 +2513,9 @@
     .modal .modal-content .modal-body{
         height: 300px; overflow-y: auto; line-height: 30px; padding-left: 15px;
     }
+    .tableC table{
+        font-size: 14px;
+    }
     .modal .modal-content .modal-header button{
         border: none; background: none; font-size: 45px; color: #627200; cursor: pointer;
     }
